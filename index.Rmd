@@ -1,0 +1,5 @@
+---
+title: "Miranda Trapani"
+site: distill::distill_website
+listing: posts
+---

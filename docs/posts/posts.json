@@ -1,0 +1,18 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to Miranda Trapani",
+    "description": "Welcome to our new blog, Miranda Trapani. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2020-08-27",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-08-27T22:48:52-04:00",
+    "input_file": {}
+  }
+]
