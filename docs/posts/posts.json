@@ -16,7 +16,7 @@
     "input_file": {}
   },
   {
-    "path": "posts/Test post/",
+    "path": "posts/First Post/",
     "title": "Welcome to this blog",
     "description": "Welcome to our new blog, Miranda Trapani. We hope you enjoy \nreading what we have to say!",
     "author": [
@@ -28,7 +28,23 @@
     "date": "2020-08-27",
     "categories": [],
     "preview": {},
-    "last_modified": "2020-08-28T00:14:17-04:00",
+    "last_modified": "2020-09-03T19:14:58-04:00",
     "input_file": "welcome.utf8.md"
+  },
+  {
+    "path": "posts/Foundations week one/",
+    "title": "Foundations week one",
+    "description": "A summary of my thoughts while reading the three articles assigned this week.",
+    "author": [
+      {
+        "name": "Miranda Trapani",
+        "url": {}
+      }
+    ],
+    "date": "2020-08-27",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-09-03T22:53:11-04:00",
+    "input_file": "FirstWeek.utf8.md"
   }
 ]

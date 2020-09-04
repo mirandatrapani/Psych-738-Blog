@@ -21,5 +21,5 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-Welcome to the modifications of the welcome post. Super meta. Neat.
+Welcome to the modifications of the welcome post. Super meta. Neat. This is to prove that I can make a post! Someday I might see about messing with the HTML file. I am very new to R so I will wait until I understand better this program, before I try that.
 
