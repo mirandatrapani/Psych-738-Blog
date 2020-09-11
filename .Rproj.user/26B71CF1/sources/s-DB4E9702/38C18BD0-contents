@@ -21,7 +21,7 @@
   <!--radix_placeholder_meta_tags-->
   <title>Welcome to this blog</title>
   
-  <meta property="description" itemprop="description" content="Welcome to our new blog, Miranda Trapani. We hope you enjoy &#10;reading what we have to say!"/>
+  <meta property="description" itemprop="description" content="Welcome to this new blog. Here we talk about the why."/>
   
   
   <!--  https://schema.org/Article -->
@@ -32,19 +32,19 @@
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Welcome to this blog"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Welcome to our new blog, Miranda Trapani. We hope you enjoy &#10;reading what we have to say!"/>
+  <meta property="og:description" content="Welcome to this new blog. Here we talk about the why."/>
   <meta property="og:locale" content="en_US"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Welcome to this blog"/>
-  <meta property="twitter:description" content="Welcome to our new blog, Miranda Trapani. We hope you enjoy &#10;reading what we have to say!"/>
+  <meta property="twitter:description" content="Welcome to this new blog. Here we talk about the why."/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome to this blog"]},{"type":"character","attributes":{},"value":["Welcome to our new blog, Miranda Trapani. We hope you enjoy \nreading what we have to say!\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Miranda Trapani"]},{"type":"character","attributes":{},"value":["CUNY Graduate Center"]},{"type":"character","attributes":{},"value":["https://gc.cuny.edu/Home"]}]}]},{"type":"character","attributes":{},"value":["08-27-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome to this blog"]},{"type":"character","attributes":{},"value":["Welcome to this new blog. Here we talk about the why.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Miranda Trapani"]},{"type":"character","attributes":{},"value":["CUNY Graduate Center"]},{"type":"character","attributes":{},"value":["https://gc.cuny.edu/Home"]}]}]},{"type":"character","attributes":{},"value":["08-27-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -952,7 +952,7 @@
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Welcome to this blog","description":"Welcome to our new blog, Miranda Trapani. We hope you enjoy \nreading what we have to say!","authors":[{"author":"Miranda Trapani","authorURL":"#","affiliation":"CUNY Graduate Center","affiliationURL":"https://gc.cuny.edu/Home"}],"publishedDate":"2020-08-27T00:00:00.000-04:00","citationText":"Trapani, 2020"}
+{"title":"Welcome to this blog","description":"Welcome to this new blog. Here we talk about the why.","authors":[{"author":"Miranda Trapani","authorURL":"#","affiliation":"CUNY Graduate Center","affiliationURL":"https://gc.cuny.edu/Home"}],"publishedDate":"2020-08-27T00:00:00.000-04:00","citationText":"Trapani, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -963,7 +963,7 @@
 
 <div class="d-title">
 <h1>Welcome to this blog</h1>
-<p><p>Welcome to our new blog, Miranda Trapani. We hope you enjoy reading what we have to say!</p></p>
+<p><p>Welcome to this new blog. Here we talk about the why.</p></p>
 </div>
 
 <div class="d-byline">
@@ -973,7 +973,24 @@
 </div>
 
 <div class="d-article">
-<p>Welcome to the modifications of the welcome post. Super meta. Neat. This is to prove that I can make a post! Someday I might see about messing with the HTML file. I am very new to R so I will wait until I understand better this program, before I try that.</p>
+<p>Hi! My name is Miranda Trapani. This blog exists as a project for my COgnitive Psychology class. Cognitive Psychology is a broad reaching topic in that it covers an extremely wide variety of brain functions including memory, perception, attention, problem solving, and learning. As a person interested in the similarities and differences between humans and non-human animals, I am taking this class for a few reasons! I’m also excited to be making a blog and using R to do it. Here are my goals for this semester:</p>
+<ul>
+<li>
+To achieve a deeper understanding of the language and history of the field of Cognitive Psychology
+</li>
+<ul>
+<li>
+Particularly as it applies for humans both to create a solid foundation and also to have the base to contrast and compare across species
+</li>
+</ul>
+<li>
+To learn specifically about topics like decision making and problem solving for the purpose of applying these tools to potential future projects looking at these skills in other animals
+</li>
+<li>
+To learn more about R through the creation of this blog, including familiarizing myself with how to code and format ideas with it, how to find and integrate new and fun packages, and just in general getting familiar with the program itself
+</li>
+</ul>
+<p>If you found this you’re probably just my professor. Thanks I hope you enjoy, looking forward to a good class!</p>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

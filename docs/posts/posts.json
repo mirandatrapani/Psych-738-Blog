@@ -2,7 +2,7 @@
   {
     "path": "posts/First Post/",
     "title": "Welcome to this blog",
-    "description": "Welcome to our new blog, Miranda Trapani. We hope you enjoy \nreading what we have to say!",
+    "description": "Welcome to this new blog. Here we talk about the why.",
     "author": [
       {
         "name": "Miranda Trapani",
@@ -12,7 +12,7 @@
     "date": "2020-08-27",
     "categories": [],
     "preview": {},
-    "last_modified": "2020-09-03T19:14:58-04:00",
+    "last_modified": "2020-09-11T10:57:06-04:00",
     "input_file": "welcome.utf8.md"
   },
   {
