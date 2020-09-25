@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/Learning week one/",
+    "title": "Learning Module: Week one",
+    "description": "Regarding learning, an in depth look at Pavlovian conditioning and how it's been going beyond Pavlov!",
+    "author": [
+      {
+        "name": "Miranda Trapani",
+        "url": {}
+      }
+    ],
+    "date": "2020-09-24",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-09-24T22:52:28-04:00",
+    "input_file": "learningweekone.utf8.md"
+  },
+  {
     "path": "posts/First Post/",
     "title": "Welcome to this blog",
     "description": "Welcome to this new blog. Here we talk about the why.",
