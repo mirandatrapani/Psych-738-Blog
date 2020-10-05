@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+<title>Miranda Trapani: Learning Module: Week two</title>
+
+<meta property="description" itemprop="description" content="Regarding learning, and a wide range of articles about associative learning! Especially looking into the relationship between these associations and other cognitive functions such as memory and attention."/>
+
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2020-10-02"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-10-02"/>
+<meta name="article:author" content="Miranda Trapani"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="Miranda Trapani: Learning Module: Week two"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Regarding learning, and a wide range of articles about associative learning! Especially looking into the relationship between these associations and other cognitive functions such as memory and attention."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Miranda Trapani"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:title" content="Miranda Trapani: Learning Module: Week two"/>
+<meta property="twitter:description" content="Regarding learning, and a wide range of articles about associative learning! Especially looking into the relationship between these associations and other cognitive functions such as memory and attention."/>
+
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Learning Module: Week two"]},{"type":"character","attributes":{},"value":["Regarding learning, and a wide range of articles about associative learning! Especially looking into the relationship between these associations and other cognitive functions such as memory and attention."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Miranda Trapani"]},{"type":"character","attributes":{},"value":["CUNY Graduate Center"]},{"type":"character","attributes":{},"value":["https://gc.cuny.edu/Home"]}]}]},{"type":"character","attributes":{},"value":["10-02-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["learningweekone.html","learningweekone_files/bowser-1.9.3/bowser.min.js","learningweekone_files/distill-2.2.21/template.v2.js","learningweekone_files/jquery-1.11.3/jquery.min.js","learningweekone_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #455a64;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative;}
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+</style>
+
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for table of contents */
+
+.d-toc {
+  color: rgba(0,0,0,0.8);
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.d-toc-header {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+.d-toc a {
+  border-bottom: none;
+}
+
+.d-toc ul {
+  padding-left: 0;
+}
+
+.d-toc li>ul {
+  padding-top: 0.8em;
+  padding-left: 16px;
+  margin-bottom: 0.6em;
+}
+
+.d-toc ul,
+.d-toc li {
+  list-style-type: none;
+}
+
+.d-toc li {
+  margin-bottom: 0.9em;
+}
+
+.d-toc-separator {
+  margin-top: 20px;
+  margin-bottom: 2em;
+}
+
+.d-article-with-toc {
+  border-top: none;
+  padding-top: 0;
+}
+
+
+
+/* Tweak code blocks (note that this CSS is repeated above in an injection
+   into the d-code shadow dom) */
+
+d-code {
+  overflow-x: auto !important;
+}
+
+pre.d-code code.d-code {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+pre.text-output {
+
+  font-size: 12px;
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media(min-width: 768px) {
+
+d-code {
+  overflow-x: visible !important;
+}
+
+pre.d-code code.d-code  {
+    padding-left: 18px;
+    font-size: 14px;
+}
+pre.text-output {
+  font-size: 14px;
+}
+}
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+.sidebar-section.custom {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.custom p {
+  margin-bottom: 0.5em;
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // create d-bibliography
+  var bibliography = $('<d-bibliography></d-bibliography>');
+  $('#distill-bibliography').wrap(bibliography);
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace citations with <d-cite>
+  $('.citation').each(function(i, val) {
+    appendix = true;
+    var cites = $(this).attr('data-cites').split(" ");
+    var dt_cite = $('<d-cite></d-cite>');
+    dt_cite.attr('key', cites.join());
+    $(this).replaceWith(dt_cite);
+  });
+  // remove refs
+  $('#refs').remove();
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-toc a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // replace code blocks with d-code
+  $('pre>code').each(function(i, val) {
+    var code = $(this);
+    var pre = code.parent();
+    var clz = "";
+    var language = pre.attr('class');
+    if (language) {
+      // map unknown languages to "clike" (without this they just dissapear)
+      if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                               "javascript", "js", "julia", "lua", "markdown",
+                               "markup", "mathml", "python", "svg", "xml"]) == -1)
+        language = "clike";
+      language = ' language="' + language + '"';
+      var dt_code = $('<d-code block' + language + clz + '></d-code>');
+      dt_code.text(code.text());
+      pre.replaceWith(dt_code);
+    } else {
+      code.addClass('text-output').unwrap().changeElementType('pre');
+    }
+  });
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('d-code, pre.text-output, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // table of contents
+    if (have_authors) // adjust border if we are in authors
+      $('.d-toc').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+    $('d-code').each(function(i, val) {
+      var style = document.createElement('style');
+      style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                        '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+      if (this.shadowRoot)
+        this.shadowRoot.appendChild(style);
+    });
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-toc-header').remove();
+  $('.d-toc').remove();
+  $('.d-toc-separator').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Learning Module: Week two","description":"Regarding learning, and a wide range of articles about associative learning! Especially looking into the relationship between these associations and other cognitive functions such as memory and attention.","authors":[{"author":"Miranda Trapani","authorURL":"#","affiliation":"CUNY Graduate Center","affiliationURL":"https://gc.cuny.edu/Home"}],"publishedDate":"2020-10-02T00:00:00.000-04:00","citationText":"Trapani, 2020"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">Miranda Trapani</a>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Home</a>
+<a href="../../about.html">About</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Learning Module: Week two</h1>
+<p><p>Regarding learning, and a wide range of articles about associative learning! Especially looking into the relationship between these associations and other cognitive functions such as memory and attention.</p></p>
+</div>
+
+<div class="d-byline">
+  Miranda Trapani  (CUNY Graduate Center)<a href="https://gc.cuny.edu/Home" class="uri">https://gc.cuny.edu/Home</a>
+  
+<br/>10-02-2020
+</div>
+
+<div class="d-article">
+<h1>
+Lee Cheong Lem, V. A., Moul, C., Harris, J. A., &amp; Livesey, E. J. (2018, April 23). Associations or Repetitions? Testing the Basis of the Perruchet Effect in Voluntary Response Speed. <i>Journal of Experimental Psychology: Learning, Memory, and Cognition.</i> Advance online publication.
+</h1>
+<p>
+First thought: I’m unfamiliar with the Perruchet effect but I’m guessing from the other part of the title that this paper will have something to do with association tasks, maybe something along the lines of learnign to associate certain pictures and then testing how well participants remember those associations? I’m guessing perhaps that repetition and association are two processes that work in tandem here and we’re hoping to tease apart if improvements on response speed are due to one or the other, or the ratio of the two at least.
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+”Specifically, learning theorists have debated (a) whether learning can occur automatically, without the involvement of intentional cognitive processes, and (b) once an association has been learned, whether it can control anticipatory behavior automatically, independent of the individual’s current beliefs about impending outcomes.” Whenever I see either-or questions, especially in cases where both sides have a body of literature in their support, I always wonder if maybe what needs to be asked isn’t “which one is it?” but “what kinds of circumstances rely on which, and why?”
+</li>
+<li>
+“Participants responded with increasing speed (indexed by a lower RT and, hence, a downward linear trend) to the square as the number of consecutive cue-square trials increased, despite showing decreasing expectancy of the square. Conversely, participants were increasingly slow to respond to the square with increasing number of consecutive cue-alone trials even if their expectancy of the square increased.” This is actually more a comment on automatic associative processes but this point made me think of it; as nebulous as the idea of “flow” is in psychology this definitely sounds like a more rigorous explanation of that phenomenon to me!
+</li>
+<li>
+“According to a US recency account, CRs should increase to both CS+ and CS– with increasing number of CS–US trials (CS+) but decrease as the number of CS–alone trials increases since only US presentations affect the production of CRs.” I think this means a single trial of CS+ or CS- after an increasing number of CS+ trials, but the wording makes it sound like CS+ and CS- are two different stimuli, or I guess more what I’m confused about is why would responses change for a single CS- at all? I don’t know, I think I’m confused on what the paper is trying to say should or shouldn’t be happening.
+</li>
+<li>
+“That is, for one group the CS and CS– were very similar, and for another group the CSs were very dissimilar.” Okay now I’m very confused! if CS+ and CS- are two different stimuli, why would the participant or subject expect to know anything about one from trials of the other? The immediate next sentence mentions generalization. I don’t know why but I always find these papers very hard to follow. I think the acronyms are all too similar, I get confused on what is or isn’t the same.
+</li>
+<li>
+“That is, one cue (Cue 1 [C1]) was always paired with one outcome (Outcome 1 [O1]) and the other cue (Cue 2 [C2]) was always paired with the other outcome (Outcome 2 [O2]).” It just would be so much easier to follow and remember if they said tone-tails and noise-heads or whatever the match up is. It would be easier to make a mental picture of the experiment too!
+</li>
+<li>
+“On the other hand, an associative account of the Perruchet effect would predict a weaker, or perhaps even no trend for the 2-cue Predictive group. In this group, participants should quickly learn which cue is paired with which outcome and as a consequence, there should be no incremental change in associative strength as the number of consecutive trials of a particular cue-outcome pairing changes.” Basically they should have already learned before these consecutive trials used to test the effect and be equally fast at responding because they already “learned the rules.” and are not constantly changing them (as associations grow stronger or weaker based on previous trials? Or is that the recency effect?)
+</li>
+<li>
+Ok so expectancy ratings are pretty much what you would expect, for the 2-cue predictive regardless of the previous trial if they heard Cue 1 they predicted head, if they heard Cue 2 they predicted tails. But for the non-predictive you did see the gambler effect. (In gamblers’ defense though, the less cards in the deck the higher the chance of finding that queen!)
+</li>
+<li>
+For response times: I’m curious just how many anticipatory responses there were, I feel like people would hit too soon in the predictive group pretty often! I guess not if they didn’t know they were being timed. These graphs don’t seem as clear/strong as the previous. A general trend for response time decreasing with the number of same trials increasing but not as pronounced. Although you can only hit a key so fast? Overall though times in expectancy trials seem consistently shorter, as if having a second to think about it and have an expectation made you quicker?
+</li>
+<li>
+“the presence of predictive cues that signal which outcome is coming (and precisely when it will occur) may create a floor effect in RT.” Hey that’s what I said!
+</li>
+<li>
+“As in Experiment 1, if recency priming is solely responsible for the trends observed in responding, then there should be a downward linear trend in RT for both the Predictive and Non-predictive groups. Alternatively, if associative strength drives the RT trends, a downward linear trend should be seen in the Non-predictive group only.” I’m just saving this here for when I look at the graphs
+</li>
+<li>
+What is interesting to me is that just looking at the graphs it looks like there is a downward slope for both, but a stronger one for the non-predictive group. I know that this experiment was trying to tease out the effects of one or the other (associative strength vs recency priming), but maybe the two are just always hand in hand! (I know the slope wasn’t significant for the predictive group but you can see visually that there is something and the predictive group was significant in the previou experiment I think? Although of course this second experiment was to see if that significance persisted, so maybe I’m just being a doubter) (Although I wonder why they didn’t run a correlation test of some kind?)
+</li>
+<li>
+The gist of this experiment seems to be: if it’s associative strength you’ll see no change in RT for predictive trials as the number of same trials preceding the one you’re looking at increases, but you will see RT decrease in non-predictive trials as the number of preceding same trials increase. Meanwhile if recency priming is at play, then whether the cue predicts the trial outcome or not, you will see that shortening of RT as the number of preceding same trials increases. However the biggest limitation in the literature is that if you know what’s going to happen you’re also going to react faster overall, and maybe if we don’t see a slope in the predictive group, it’s just because they’re already reacting as fast as they possibly can, not necessarily because associative strength is driving the response times. So experimenter 2 in this study varied the time between cue and stimulus that the participants react to, to add some uncertainty that would hopefully increase reaction times without influencing the processes studied. However, reaction times for the predictive group were still overall much shorter than the non-predictive group.
+</li>
+<li>
+“Indeed, it would be very counterproductive for an organism to evolve two learning processes that are continuously at odds, frequently eliciting conflicting behavioral tendencies. Thus, although the Perruchet effect is an important litmus test for theories of predictive learning in humans, the dissociation should certainly be considered the exception rather than the rule.” Just some good context for the Perruchet effect
+</li>
+<li>
+“Whereas the results from the current experiments do not rule out the possibility that recency priming contributes to the trends observed in RT, they suggest that these trends are influenced by associative priming, supporting the fact that the Perruchet effect is a genuine dissociation between conscious expectancy and learned anticipatory behaviors. Hence, these results are in favor of a dual-process theory of learned action selection rather than a single-process theory in which learned behaviors necessarily manifest because of a conscious expectation of the outcome.” The overall point and findings/implications of the paper!
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: This paper really lost me in the introduction but brought it back for the actual methodology, results, and implications as discussed in the discussion. These kinds of papers that delve deeply into a single aspect rather than a broad topic are very interesting, but very difficult to get the relevant background knowledge straight so you can see how interesting they are exactly! Bit of a marathon to read them.
+</p>
+<h1>
+Watson, P., Pearson, D., Chow, M., Theeuwes, J., Wiers, R. W., Most, S. B., &amp; Le Pelley, M. E. (2019). <i>Capture and control: Working memory modulates attentional capture by reward-related stimuli.</i> Psychological science, 30(8), 1174-1185.
+</h1>
+<p>
+First thoughts: Working memory and how it influences attention, whether things catch the participant’s attention or how easily/how hard, when the stimuli being attended to indicate reward. Working memory refers to ideas, stimuli, concepts, information of some kind that you’re currently holding onto and working with, not the short-term memory. Although I do often get short-term and working memories confused. Maybe this paper will look at how working memory distracts and what kind of threshold elicits attention? Maybe a combination of related or unrelated information in the working memory will influence that threshold?
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+They compare eye tracking after presentation of a distractor which is a reward-associated stimulus in two conditions: during a low-working memory load task and a high-working memory load task. I was on the right track!
+</li>
+<li>
+“That is, capture increased when executive working memory resources were taxed by the competing memory task.” What is meant by capture? Oh attentional capture. The distractor “captures” attention more the executive working memory has a higher load. These results are then implicate that “executive control can be used to reduce the likelihood of capture by physically salient distractors, in turn increasing our ability to prioritize and select lower salience stimuli that are relevant for current task goals” However it seems like it’s saying that executive memory usage would make it harder to prioritize. Maybe executive control means purposefully leaving our working memory clear for the task at hand, e.g. not multitasking?
+</li>
+<li>
+“G<em>Power software (Faul, Erdfelder, Lang, &amp; Buchner, 2007) indicated that a sample of 27 participants would provide power of .90 to detect a significant, medium-size (dz = 0.65) within-subjects difference in the VMAC score under high versus low memory load.” I’ve only used G</em>Power (or well, tried to use it) once and I didn’t understand then and still would be interested to understand now how exactly it works.
+</li>
+<li>
+I probably wouldn’t have been eligible for an experiment like this since I wear glasses! My eyes would do all kinds of wonky things with them off and I feel like the dual magnification from the bifocal prescription would make it hard to track with them off? I wonder if so! I wonder if impaired vision has any influence, I guess it would depend on the kinds of impairments
+</li>
+<li>
+“For half of the participants, blue was the high-reward color and orange was the low-reward color; for the other half of the participants, this was reversed.” Good idea to make sure that the colors didn’t affect the propensity to look or anything like that. For me I feel like even at the same luminosity/saturation/whatever orange is still a much more bright and alert color, probably because of the wider social associations because orange is usually the color of things like caution signs, road work cones, etc.
+</li>
+<li>
+So they found that the different memory tasks definitely had different loads on working memory (people performed significantly better on low working memory load task than high), they found that the high-reward distractor was looked at significantly more often, and that when the memory task was high working-memory, people looked at the distractors more overall. There was also an interaction where people seemed to look the most when the distractor indicated a high reward and they were remembering the longer string of numbers.
+</li>
+<li>
+I don’t fully understand what value-modulated-attentional-capture (VMAC) is vs. physical salience (PS) especially since the two seem to indicate the same relationships between the distractor meaning and the memory tasks. Oh wait physical salience refers to using a color vs. a random grey circle as the distractor. So that difference indicates how salient the distractor is on it’s own, just the individual relationship of “how distracting is the color itself when you’re busy with the memory tasks too.” As opposed to the VMAC which compares the extra variable of the reward indicated by the color. Got it!
+</li>
+<li>
+Okay now experiment 2 is going to include trials where BOTH color circles are included and see how many times people look at a circle first. Also they know that both colors have equal physical salience from experiment one, they compared the blue vs. no circle and the orange vs. circle. Smart, good to do!
+</li>
+<li>
+Interestingly, in experiment 2 the easy memory task performance is similar to in experiment 1, but the hard memory task performance is even lower than it was in experiment 2!
+</li>
+<li>
+So in the both distractor trials they compared how often the high reward distractor was looked at over the low reward distractor, where they found that “increased memory load resulted in a selective increase in oculomotor capture by the high-reward distractor, with no discernible effect on capture by low-reward distractors” Meaning that when the working memory task was harder people looked at the high reward distractor more often but not the low reward distractor, indicating that amplification of the VMAC.
+</li>
+<li>
+“This limited our ability to infer the parametric relationship between reward and attention; participants may have simply classified rewards as “large” or “small” without regard to their specific point values. Future studies could assess effects of a wider range of reward levels.” I don’t think that having only two reward levels is necessarily a limitation, personally I can imagine that if there were so many colors indicating all different levels of rewards, I would easily forget which color meant what reward and probably lose that associative strength. Unless perhaps the reward range was intuitively matched with hue. (Red being the lowest reward and purple the highest and the visual spectrum falling in the middle in order, basically)
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: I liked this paper a lot actually, I found it really easy to follow. I feel like I can also more easily see where research might go forward from it, which makes me want to possibly use this paper and build off of it for my assignment. I love it when discussion sections are really clear like that and at the end say “here’s what we’d like to do next or what puzzle pieces we still need to add!”
+</p>
+<h1>
+Easdale, L. C., Le Pelley, M. E., &amp; Beesley, T. (2019). The onset of uncertainty facilitates the learning of new associations by increasing attention to cues. <i>Quarterly Journal of Experimental Psychology,</i> 72(2), 193-208.
+</h1>
+<p>
+First thoughts: This paper I predict will involve comparisons of how quickly associations are made when the US-CS pair is consistent to when it is inconsistent in some way (temporally? Maybe sometimes there are other kinds of CS?) and what you will see is that attention, measured possibly by saccades, facilitates the learning to compensate for the uncertainty, or possibly even overalls leads to improved learning as compared to the certain relationships. I anticipate that the high number of conditioned and unconditioned stimuli will confuse me!
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+“That is, our experience of the relationships between stimuli and important events that follow them can increase or decrease the amount of attention paid to those stimuli” Like how in the previous experiment where attention to reward-associated stimuli was greater than non-associated stimuli!
+</li>
+<li>
+I anticipate that this paper will look into whether one of two principles shape associative learning, which are “the predictiveness principle, cues that reliably predict an outcome become the focus of selective attention, in order to exploit known stimulus–outcome relationships” and “uncertainty principle states that attention acts to prioritise those cues for which the outcome is uncertain, promoting exploration of these cues in order to (hopefully) reduce the uncertainty regarding their predictive status” Which I am putting here for reference for myself.
+</li>
+<li>
+“It was found that overt attention to all cues (both predictive and nonpredictive) was generally greater for compounds that were trained under uncertain conditions – a finding which follows naturally from the uncertainty principle. However, within each compound, participants showed greater overt attention to predictive cues than nonpredictive cues, demonstrating an influence of predictiveness (and replicating the findings of Le Pelley et al., 2011). Thus, Beesley et al.’s study was notable in providing the first demonstration of the effect of predictiveness and uncertainty on overt attention within the same experimental procedure.” This study’s findings are interesting and imagine this study will be mentioned a bit
+</li>
+<li>
+“these theories propose that the rate of learning about cues – known as the associability of those cues – is a positive function of the attention paid to them, such that cues that are the focus of attention will be learned about more rapidly than cues that are not” another key point of this article
+</li>
+<li>
+While it makes sense for learning to be driven by uncertainty – as it indicates that there may be more information to be learned– it is also adaptive to stop searching for this extra information once it becomes evident that there is no more to learn from the task contingencies” I predict that unexpected uncertainty will follow the uncertainty principle and expected uncertainty will follow the predictiveness principle.
+</li>
+<li>
+So in stage one, AX and AY always predicted o1 because of A and BX and BY always predicted o2 because of B for the certain group, and the uncertain group USUALLY followed the same (.8 vs. .2 in probabilities). Then for stage 2, instead X always predicted o1 and Y always predicted o2, and you usually saw X with A but now always, and you usually saw Y with B not always. So at first it will seem less predictable because you’re focused on the A/B relationship. So they will compare the two groups and how quickly they learn this new relationship (that X/Y are now the reliable predictors).
+</li>
+<li>
+Further explanation: “This arrangement meant that, for participants in the S1:U condition, the predictiveness of cues A and B did not change between Stages 1 and 2. That is, the presence of cue A predicted that outcome o1 would occur on 80% of the trials in both Stage 1 and Stage 2, while the presence of B predicted that o2 would occur on 80% of the trials in both Stage 1 and Stage 2. Consequently, for participants in the S1:U condition, the level of uncertainty experienced at the outset of Stage 2 was expected.”
+</li>
+<li>
+“Participants were instructed that they were to play the role of a circus owner who wanted to learn about how the audience reacted to each of the combinations of clowns performing in the circus.” That is SO fun!
+</li>
+<li>
+The graphs of proportion of probable outcomes seem to be pretty much as expected; predictive group learned the rules and by the end of Stage 1 was predicting perfectly, and the unpredictive group never quite reached perfect but also experienced a bit of learning over time. Although it is cool to see that in the second group, the response accuracy of both groups followed exactly the same pattern, which was the same as the predictive group in stage 1.
+</li>
+<li>
+For the proportion of RT spent looking at cues is very interesting. In stage 1 the predictive group started off looking at both pretty evenly then over time looked at X&amp;Y (which were meaningless in this stage) less and less. In the unpredictive group, participants continued to look at both cues pretty much equally. In stage 2, where for everyone X&amp;Y are perfectly predictive, the people from predictive in stage 1 started off looking at mostly A&amp;B and very little X&amp;Y, but then quickly switched. Mean while for the previously unpredictive group, they started looking at both cues equally, then over time continued to look at X&amp;Y and looked at A&amp;B less, but not as much less as predictive did X&amp;Y in stage 1. So even though A&amp;B meant nothing here, they were still attending to it more than if they had not had the previous uncertainty experience.
+</li>
+<li>
+“the difference in response accuracy between the first and second blocks of Stage 2 was significantly larger for the S1:C condition, than for the S1:U condition. Thus, participants in the S1:C condition learned about the new predictive status of cues X and Y significantly faster than participants in the S1:U condition.”
+</li>
+<li>
+“the overall level of processing of cues was similar in the two conditions in Stage 1 (there was no main effect of condition, nor did condition interact with block).” This surprises me given the eye-gaze graphs
+</li>
+<li>
+“Our results indicate that participants in condition S1:C showed a greater increase in attention to the cues at the start of Stage 2, as revealed by a significant main effect of uncertainty in the eye-gaze data. In addition, these participants also showed a faster rate of learning about the new predictive status of cues X and Y, as revealed by response choices on the infrequent trial types. We therefore take this as evidence for an influence of unexpected uncertainty on both attention and associability” That makes sense!
+</li>
+<li>
+“Research conducted in the area of operant extinction using animal subjects has indicated that contingencies trained under conditions of partial reinforcement show ‘resistance to extinction’” Is that an alternative explanation or is this a cognitive explanation of an otherwise strictly behavioral observation, though?
+</li>
+<li>
+Experiment 2: pretty much the same to see if they could replicate the findings, but they made Stage 1 twice as long to hopefully really cement the learning of the the A-O1 and B-O2 associations. Also they added a test stage which “assessed the associations pertaining to all cues in the task. If the difference in the rate of learning in Stage 2 between the S1:C and S1:U conditions can be attributed to the PREE, we would expect that knowledge about the associations pertaining to cues A and B would be better preserved for participants in the S1:U condition compared to those in the S1:C condition at the end of Stage 2.” Meaning that the S1:U (unpredictive) group would be expected to remember the AB associations better due to the partial reinforcement effect on extinction
+</li>
+<li>
+Experiment 2 results: This time in stage two for the predictive group, the participants attended to both cues (A/B and X/Y) evenly immediately, rather than the dramatic flip seen in experiment 1. Otherwise, results seemed pretty similar in just looking at the graphs
+</li>
+<li>
+“The interaction between block and condition was not significant, F &lt; 1.” I believe this means that the improvement trend wasn’t particularly different between conditions, which you can see from the graph the two trends, while consistently lower for the unpredictive group, still follow the same slope.
+</li>
+<li>
+The effect of block was significant for RT spent on cues for the predictive condition but not the unpredictive, again like it seemed in the graphs!
+</li>
+<li>
+For stage 2 however there wasn’t a big difference between the two conditions in their RT attending to the different cues.
+</li>
+<li>
+“Thus, participants in the S1:C condition were significantly faster to learn about the new predictive status of cues X and Y.“ Again as expected!
+</li>
+<li>
+Test stage: the predictive scores for X and Y were the same for both groups but higher for A &amp; B in the SI:C group than in the SI:U group. This is the opposite of what the PREE from earlier would predict.
+</li>
+<li>
+By allowing the SI:U group more time to learn the probabilistic outcomes the uncertainty in stage 2 was even more expected as indicated by the fact that “the significant three-way interaction in the Stage 2 eye gaze data suggests that the attentional bias towards cues X and Y over cues A and B emerged at a faster rate in condition S1:C compared to condition S1:U.”
+</li>
+<li>
+“It is therefore plausible to suggest that it is the increase in attention to cues, that results from a violation of the expected level of uncertainty, that leads to facilitated learning.” A key finding of the paper
+</li>
+<li>
+The general discussion runs through a few other models of learning to determine how other theories do and do not fit into their findings. Of particular interest to me was the “latent causes” theory put forth by Gershman and others that they cite. According to this theory “When a large prediction error occurs between what is expected on the basis of experience and the actual events that occur in the environment, this signals to the learner that a new latent cause is at play, and therefore that the current events should be attributed to this new latent cause. This has important consequences for the knowledge acquired up to the point at which this sudden change in the contingencies occurs, since this knowledge remains intact and can affect later behaviour.” This theory feels like something that would be my own train of thought, personally.
+</li>
+<li>
+My first thought in reading the propositional knowledge explanation was that it sounded a lot like earlier explanations simply explained in different words that make a few more assumptions about the participant’s conscious train of thought. The next sentence of course points out that this is in fact a rediscription using “propositions” instead of associations!
+</li>
+</ul>
+</li>
+</p>
+<p>
+Final thoughts: I expected this paper to be much harder to follow than it was but it was actually very accessible and I did not have a hard time following the various labels for different kinds of stimuli. I am not sure if this means I’m getting better at reading these kinds of papers or if I’m reading easier to follow papers.
+</p>
+<h1>
+McLaren, I. P., Forrest, C. L. D., McLaren, R. P., Jones, F. W., Aitken, M. R. F., &amp; Mackintosh, N. J. (2014). Associations and propositions: The case for a dual-process account of learning in humans. <i>Neurobiology of learning and memory,</i> 108, 185-195.
+</h1>
+<p>
+First thoughts: Judging by the final remarks of the previous paper and the title of this paper, I am expecting this paper to look more closely into the difference between associative and propositional models of learning.
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+“Both have suggested that all human learning is to be explained by a single process propositional account, there being no evidence for associative processes.” This may be a contentious opinion but I personally feel that the opinion of this quote often comes from this assumption of human exceptionalism that I just don’t feel is necessarily accurate and/or a potential cognitive dissonance in that some people need to feel or believe that we are intrinsically different than animals in the way that we perceive and interpret the world because the alternative is that we are more similar to non human animals than we are different and that is at conflict with some peoples’ perception of animals and what is and isn’t okay to do to them. Not to say that I am advocating for a vegan only lifestyle! (I’m certainly not vegan and I think that intentionally going against human biology in that way is also indicative of this assumption of a difference between humans and non-human animals) However I think that for whatever reason people need to feel that non human animals are “stupider” than human, essentially, and they let that bias influence their interpretations of both human and non-human cognitive processes.
+</li>
+<li>
+“if we allow (as we do) that humans can learn by forming propositions, why could this not also be the case for other animals?” Exactly!!
+</li>
+<li>
+The next part immediately points out associative learning in aplysia which okay sure! But come on. To assume that humans are an exception is just as silly as assuming that aplysia is an exception.
+</li>
+<li>
+“by taking the view that the participants in the experiment are using cognitive inference based on a heuristic of the type ‘‘if there are two cues predicting the outcome, then credit for this prediction must be shared between them according to their salience’” To me, this is a proposed cognitive train of thought applied to the same concepts of the associative theory. By which I mean that the associative perspective simply makes an assumption of no train of thought, but the propositional theory works of course for humans because we can ask each other their train of thought. Is the propositional theory really different, or is it just the associative theory expressed through language?
+</li>
+<li>
+“argued that using many different trials, presented in a random order, each employing some of a large number of stimuli with different relationships to the available outcomes, should make it hard for participants to keep explicit track of the contingent relationships in the experiment.” So I guess in a way the propositional theory is “that which we can keep track of consciously” and the associative theory is “that which we can’t” almost?
+</li>
+<li>
+The explanation of this experiment to look into cue competition in an incidental learning paradigm would definitely have me relying on associative processes because I am struggling to follow how the different cues predict the target trial and when already!
+</li>
+<li>
+The irrational cue competition effects section is interesting, it does seem confusing to me that the subjects were strongly conditioned to B despite experiencing less shocks in its presence, although one perspective might be that the association between B and A led to a heightened vigilance or freezing fear response while waiting for/expecting A. If the response to a shock is a freezing, and you only experience B when it’s paired with A, it also makes sense to interpret this as B and A are together, so to freeze in fear in expectation. Forgive the anthropomorphizing (or is this just a propositional theory explanation of these results in rats?)
+</li>
+<li>
+Oh neat, I think the second half of this paragraph said the same thing! It was worded a bit differently and not as easy to tell.
+</li>
+<li>
+I think this paper is making the same argument I am, haha!
+</li>
+<li>
+“Learning in this condition was superior to that observed when participants were trained on 5 vs. 7 for the same total amount of time.” This might not be related but personally this reminds me of how I’ve noticed about myself that if I am just inundated with information about a new topic, just absolutely delve deeply into it, regardless of how well I understand the more advanced parts of it, I tend to understand the fundamentals much much better than if I had spent that same amount of time studying ONLY those fundamentals.
+</li>
+<li>
+“There have been a few exceptions, but the weight of the evidence strongly suggests that differences in incidental learning are at best only weakly related to conventional measures of intelligence – and certainly less strongly related than are measures of explicit problem solving.” If I am understanding this right it’s arguing that measures of intelligence like IQ are likely measures of aptitude for propositional learning, as indicated here by the fact that explicit problem solving would likely use a propositional approach and incidental learning an associative approach (this also makes sense when you think about phenomenon like how humans tend to see patterns even where there are none, which I remembered first hearing in a religion-debunking context but here, these nonexistent patterns would be a form of attempted incidental learning, and the attempt to identify associations where rules/a propositional theory is not applicable!)
+</li>
+</li>
+“But is implicit learning merely something observed under artificial laboratory conditions, or does it contribute to the way people actually learn about and adapt to the world?” I just gave a real world example! (Albeit one of it failing, haha)
+</li>
+<li>
+“From this perspective, our distinction between Cognitive and Associative processes is more akin to a continuum, with associative and propositional processes as the endpoints of this continuum and the degree of control the factor that varies across it.” This makes a lot of sense to me
+</li>
+<li>
+“To our mind, there can be little doubt that much (if not all) of learning in infra-humans is associatively based, though we would not rule out at least the precursors of symbolic thought in some species (e.g. chimpanzees).” This is where I don’t necessarily agree with this paper, and I think the way in which language works as the foundation for how we approach metacognition is something to consider here. Propositional theories rely on rules, particularly rules that are able to be relayed, which relies on their syntactic expression and understanding. If rules can be expressed in ways other than syntactically, perhaps that would offer at least a way to give non-human animals an opportunity to show something akin to propositional learning. Or, alternatively, offer non-human animals a method of expressing a thought through language, however comparatively simple
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: What I appreciated most about this paper is that it is a review of current literature supporting or criticizing a theory and reimagining it in that framework for a “problem” so to speak that we are still thinking about right now. So far during this class most of these kinds of papers have been much older and instead been arguing for a theory that at this point is much widely accepted and less debated. I am interested to see where this theory goes from here. Personally I definitely agree when it comes to humans but I think an argument for non-human animals also experiencing dual theory learning would be worth really giving a look!
+</p>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
