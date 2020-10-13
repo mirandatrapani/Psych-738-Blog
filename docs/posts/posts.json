@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/Language week one/",
+    "title": "Language Module: Week one",
+    "description": "Regarding language, reading some textbook sexcerpts on what language is, how we categorize the different parts of speech, and finally a paper on the innateness of syntax!",
+    "author": [
+      {
+        "name": "Miranda Trapani",
+        "url": {}
+      }
+    ],
+    "date": "2020-10-11",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-10-13T00:15:01-04:00",
+    "input_file": "learningweektwo.utf8.md"
+  },
+  {
     "path": "posts/Learning week two/",
     "title": "Learning Module: Week two",
     "description": "Regarding learning, and a wide range of articles about associative learning! Especially looking into the relationship between these associations and other cognitive functions such as memory and attention.",

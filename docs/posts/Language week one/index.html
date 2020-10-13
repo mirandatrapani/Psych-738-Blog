@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+<title>Miranda Trapani: Language Module: Week one</title>
+
+<meta property="description" itemprop="description" content="Regarding language, reading some textbook sexcerpts on what language is, how we categorize the different parts of speech, and finally a paper on the innateness of syntax!"/>
+
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2020-10-11"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-10-11"/>
+<meta name="article:author" content="Miranda Trapani"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="Miranda Trapani: Language Module: Week one"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Regarding language, reading some textbook sexcerpts on what language is, how we categorize the different parts of speech, and finally a paper on the innateness of syntax!"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Miranda Trapani"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:title" content="Miranda Trapani: Language Module: Week one"/>
+<meta property="twitter:description" content="Regarding language, reading some textbook sexcerpts on what language is, how we categorize the different parts of speech, and finally a paper on the innateness of syntax!"/>
+
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Language Module: Week one"]},{"type":"character","attributes":{},"value":["Regarding language, reading some textbook sexcerpts on what language is, how we categorize the different parts of speech, and finally a paper on the innateness of syntax!"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Miranda Trapani"]},{"type":"character","attributes":{},"value":["CUNY Graduate Center"]},{"type":"character","attributes":{},"value":["https://gc.cuny.edu/Home"]}]}]},{"type":"character","attributes":{},"value":["10-11-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["learningweekone.html","learningweekone_files/bowser-1.9.3/bowser.min.js","learningweekone_files/distill-2.2.21/template.v2.js","learningweekone_files/jquery-1.11.3/jquery.min.js","learningweekone_files/webcomponents-2.0.0/webcomponents.js","learningweektwo_files/bowser-1.9.3/bowser.min.js","learningweektwo_files/distill-2.2.21/template.v2.js","learningweektwo_files/jquery-1.11.3/jquery.min.js","learningweektwo_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #455a64;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative;}
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+</style>
+
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for table of contents */
+
+.d-toc {
+  color: rgba(0,0,0,0.8);
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.d-toc-header {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+.d-toc a {
+  border-bottom: none;
+}
+
+.d-toc ul {
+  padding-left: 0;
+}
+
+.d-toc li>ul {
+  padding-top: 0.8em;
+  padding-left: 16px;
+  margin-bottom: 0.6em;
+}
+
+.d-toc ul,
+.d-toc li {
+  list-style-type: none;
+}
+
+.d-toc li {
+  margin-bottom: 0.9em;
+}
+
+.d-toc-separator {
+  margin-top: 20px;
+  margin-bottom: 2em;
+}
+
+.d-article-with-toc {
+  border-top: none;
+  padding-top: 0;
+}
+
+
+
+/* Tweak code blocks (note that this CSS is repeated above in an injection
+   into the d-code shadow dom) */
+
+d-code {
+  overflow-x: auto !important;
+}
+
+pre.d-code code.d-code {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+pre.text-output {
+
+  font-size: 12px;
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media(min-width: 768px) {
+
+d-code {
+  overflow-x: visible !important;
+}
+
+pre.d-code code.d-code  {
+    padding-left: 18px;
+    font-size: 14px;
+}
+pre.text-output {
+  font-size: 14px;
+}
+}
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+.sidebar-section.custom {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.custom p {
+  margin-bottom: 0.5em;
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // create d-bibliography
+  var bibliography = $('<d-bibliography></d-bibliography>');
+  $('#distill-bibliography').wrap(bibliography);
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace citations with <d-cite>
+  $('.citation').each(function(i, val) {
+    appendix = true;
+    var cites = $(this).attr('data-cites').split(" ");
+    var dt_cite = $('<d-cite></d-cite>');
+    dt_cite.attr('key', cites.join());
+    $(this).replaceWith(dt_cite);
+  });
+  // remove refs
+  $('#refs').remove();
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-toc a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // replace code blocks with d-code
+  $('pre>code').each(function(i, val) {
+    var code = $(this);
+    var pre = code.parent();
+    var clz = "";
+    var language = pre.attr('class');
+    if (language) {
+      // map unknown languages to "clike" (without this they just dissapear)
+      if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                               "javascript", "js", "julia", "lua", "markdown",
+                               "markup", "mathml", "python", "svg", "xml"]) == -1)
+        language = "clike";
+      language = ' language="' + language + '"';
+      var dt_code = $('<d-code block' + language + clz + '></d-code>');
+      dt_code.text(code.text());
+      pre.replaceWith(dt_code);
+    } else {
+      code.addClass('text-output').unwrap().changeElementType('pre');
+    }
+  });
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('d-code, pre.text-output, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // table of contents
+    if (have_authors) // adjust border if we are in authors
+      $('.d-toc').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+    $('d-code').each(function(i, val) {
+      var style = document.createElement('style');
+      style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                        '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+      if (this.shadowRoot)
+        this.shadowRoot.appendChild(style);
+    });
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-toc-header').remove();
+  $('.d-toc').remove();
+  $('.d-toc-separator').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Language Module: Week one","description":"Regarding language, reading some textbook sexcerpts on what language is, how we categorize the different parts of speech, and finally a paper on the innateness of syntax!","authors":[{"author":"Miranda Trapani","authorURL":"#","affiliation":"CUNY Graduate Center","affiliationURL":"https://gc.cuny.edu/Home"}],"publishedDate":"2020-10-11T00:00:00.000-04:00","citationText":"Trapani, 2020"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">Miranda Trapani</a>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Home</a>
+<a href="../../about.html">About</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Language Module: Week one</h1>
+<p><p>Regarding language, reading some textbook sexcerpts on what language is, how we categorize the different parts of speech, and finally a paper on the innateness of syntax!</p></p>
+</div>
+
+<div class="d-byline">
+  Miranda Trapani  (CUNY Graduate Center)<a href="https://gc.cuny.edu/Home" class="uri">https://gc.cuny.edu/Home</a>
+  
+<br/>10-11-2020
+</div>
+
+<div class="d-article">
+<h1>
+Radford, A., Atkinson, M., Britain, D., Clahsen, H., &amp; Spencer, A. (2009). <i>Linguistics: An introduction</i> (2nd edition). Cambridge, UK: Cambridge University Press. pgs 1-16, 129-135, 247-253, 257-262
+</h1>
+<p>
+First thoughts: A linguistics textbook! A lot of short excerpts from it too. As this is a textbook, I am hoping it will be quicker read as it will be intentionally structured to convey new information to me. Having read over this assignment I’m a bit nervous but hopefully these excerpts, which seem to be exactly the topics I need to familiarize myself with, will help. This time a lot of these little thoughts and notes will be copying down information for reference.
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+“unless we have a view on the nature of the relevant cognitive system, it makes no sense to enquire into its acquisition, its use in production and comprehension and its representation in the brain.” I’m not 100% I agree with this in that I don’t see how needing to know the cognitive system of linguistics (or anything) is necessary to learning about the neuroscience of it. Except maybe enough to know when you are utilizing that particular cognitive skill. If anything, observations of the neurophysiological routes that kind of thinking takes place might be informative to the nature of the system itself.
+</li>
+<li>
+“This is a major methodological difference between linguists and cognitive psychologists in their study of the human mind, and some critics might see it as making linguistics unscientific or subjective.” Why?? This is just what fieldwork and observational data is!
+</li>
+<li>
+A sentence with an asterisk is conventional indication that that sentence is not a possible sentence
+</li>
+<li>
+The four questions of linguistics:
+<ol>
+<li>
+What is the nature of the cognitive system which we identify with knowing a language? (linguistics itself)
+</li>
+<li>
+How do we acquire such a system? (developmental linguistics)
+</li>
+<li>
+How is this system used in our production and comprehension of speech? (psycholinguistics)
+</li>
+<li>
+How is this system represented in the brain? (neurolinguistics)
+</li>
+</ol>
+</li>
+<li>
+“But the infinite nature of the set of English sentences, exemplified by those in (9), does not entail that the principles of combination used in constructing these sentences are also infinite; and it is these principles which form part of a grammar.” So basically linguistics studies these finite rules and how they work to express the infinite number of ways that language can be used to communicate infinite numbers of concepts, thoughts, experiences, etc?
+</li>
+<li>
+The task of linguistics is to develop of theory of generative grammar (a theory about how phrases and sentences are formed)
+</li>
+<li>
+The phonetics of linguistics is very interesting because I am sure that the difference between whether or not you are a studying a tonal language like mandarin makes such a big influence on the cognitive system involved
+</li>
+<li>
+The grammar of a language has four components: a lexicon, a syntactic component, a PF (Phonological form) component, and an LF (Logical form) component)
+</li>
+<li>
+Linguistics also attempts to develop a theory for a universal grammar, that is rules that govern all languages
+</li>
+<li>
+Innateness hypothesis: Chomsky’s hypothesis that the course of language acquisition is determined by an innate language faculty
+</li>
+<li>
+“but when they do this, it is to ensure that children speak truthfully; grammatical correctness is not their target.” I’ve seen many instances of parents correcting their childrens’ grammar
+</li>
+<li>
+Developmental linguists are also interested in a set of principles of Universal Grammar as the innate language faculty is not dependent on language of the parents but on the language that the child hears during the acquisition period (I wonder how often comparisons have been made between monolingual and bilingual children during this period?)
+</li>
+<li>
+Sentence comprehension must involve something in addition to the grammar
+</li>
+<li>
+“this sort of brain damage almost always occurs in the left side of the brain (the left hemisphere). Damage to similar areas in the right hemisphere usually gives rise to entirely different deficits that have little to do with language.” Not always! It is sometimes flipped for people, I believe this flip is correlated/related to left-handedness as well but I cannot be if one is ALWAYS seen with the other or not as it has been a while since my last neuroscience course
+</li>
+<li>
+Dichronic methods of studying language change: comparing excerpts/manuscripts across time periods to language today. Issue is that this is biased toward only a non-random subset of the population (the wealthy that were able to afford writing tools and formal writing education) and does not capture language change across communities in which language remains strictly oral. Synchronic (apparent time) approach: comparing language at a single instance across generations instead. This is much more representative of a community, although differences across generations at a given time may not be due to linguistic change. Variable language features can be due to age variation
+</li>
+<li>
+The parts of the sentence:
+<ul>
+<li>
+Nouns, verbs, and adjectives I am already very familiar with!
+</li>
+<li>
+Definite/indefinite article: the/a or an
+</li>
+<li>
+Complements: the noun or phrase that is receiving the verb (the object?)
+</li>
+<li>
+Subject: the one performing the “main” verb, in some way
+</li>
+<li>
+Arguments: subjects and complements are arguments of verbs
+</li>
+<li>
+Adverb: modifies a verb the way an adjective modifies a noun
+</li>
+<li>
+Prepositions: typically serve to relate nouns to events in space or time (under/before/about/of)
+</li>
+</ul>
+</li>
+<li>
+There are content words (nouns, verbs, adjectives, adverbs, and prepositions) and there are function words (words like which, to, that, have been, etc) which fall into functional categories (articles are also function words)
+</li>
+<li>
+The function of the article is more or less to make what the noun refers to more or less specific (buying a car vs buying the car). Demonstratives (this or that) can be even more specific. These are all part of the class of function words called determiners (D)
+</li>
+<li>
+Auxiliary verb (can, will, must, have, be) are a kind of function word that precede lexical verbs and can be moved to make a sentence a question, or negated to influence whether the verb in question is happening
+</li>
+<li>
+The function word to accompanies verbs to form the infinitive (to run, to read, etc) it can be split by an adverb (to really run, etc) but this is often avoided as it is cumbersome (to quickly run vs to run quickly)
+</li>
+<li>
+Pronouns: stand for noun expression, most common are personal pronouns (I/we/he/them/you/it/us etc)
+</li>
+<li>
+Coordinating conjunctions: and, but, or. These conjunctions join words or phrases together to form larger phrases
+</li>
+<li>
+Complementisers: that, these are words that introduce a complement clause (if and for as well)
+</li>
+<li>
+“I/We/You/They smoke/*smokes cigars” I don’t think smokes is appropriate for any of those pronouns
+</li>
+<li>
+“To use the relevant grammatical terminology, we can say that an auxiliary or a verb is finite if it inflects for tense/agreement and has a nominative subject, and nonfinite if it doesn’t inflect for tense or agreement and doesn’t have a nominative subject” Up until now I have been pretty familiar with different declensions of nouns (nominative/accusative/genitive) as well as the different between main and complement clauses from studying latin, but this is a great tool for expressing/knowing which verbs are finite/nonfinite and that I wanted to write down!
+</li>
+<li>
+This is a very interesting perspective as it seems like linguistics terminology and terminology when studying english as a language are just a little bit different. At least it seems that way in that I’ve never heard of tense markers being used as “aspect,” but rather that an activity that is ongoing is in the perfect tense, for example (again a latin example, however)
+</li>
+<li>
+As I read more it seems it is latin that has tense organized in this way, in that instead there is only the perfect participle to announce that an action is complete wrt tense. Interesting!
+</li>
+<li>
+Some notes on abbreviations in labelled tree diagrams: TP (a merging of an infinitival tense particle, T, with a verb phrase, VP) (also can be called a tensed auxiliary phrase) DP (determiner phrase) PP (prepositional phrase)
+</li>
+<li>
+Proposition is the meaning expressed by the utterance of a sentence
+</li>
+<li>
+Deictic words: words like personal pronouns that require context for their interpretation
+</li>
+<li>
+Information structure: a sentence/utterance can have new information (usually in the context of a response to a question) and given information
+</li>
+<li>
+Performative verbs (order, assure, conclude) are words for speech acts (actions performed through language)
+</li>
+<li>
+Cooperative principle: ordinary conversation is governed by this, essentially people in a conversation must be helpful to one another. This means following four maxims: quality (don’t lie) quantity (don’t over explain/over inform) relation (say something relevant) and manner (being perspicuous, which honestly just sounds like a repeat of the last 3)
+</li>
+<li>
+“Here, however, context seems to be embracing the full set of beliefs that speakers and hearers have and inferences that they might make on the basis of those beliefs. Importantly, however, when computing the full meaning of a discourse, we obviously don’t try to deploy everything we know or believe about the world or all the possible inferences that we could draw” This sentence is particularly interesting to me, I think because determining this context sounds like the kind of thing that would be a big topic of study for sociolinguistics.
+</li>
+<li>
+“The least clear of Grice’s maxims is that of Relation: what does it mean for an utterance to be relevant?“ Disagree, I have no idea how manner is supposed to be different from the previous three!
+</li>
+<li>
+Relevance theory: speakers do (or should) comply with a communicative principle of relevance, basically that the information is relevant to the situation, additionally an utterance should have a “positive cognitive effects” (something new is learned/added, essentially) and that if this information is not genuinely new (does not provide a new inference the hearer can make) or the information is too hard to infer (requires too much effort) then it’s not very relevant. This theory is not a buildup of Grice’s maxims but an alternative explanation
+</li>
+<li>
+Conversation analysis: study of devices people use in conversation to manage the conversation itself (indicate when someone doesn’t want to talk about a subject, or is done talking, or someone is interested in hearing more, etc)
+</li>
+<li>
+Adjacency pairs: one such device; the first utterance virtually demands a response, which would be the second
+</li>
+<li>
+Transition relevance places (TRP): the points in which a second eron can take up the talk (the most obvious is a noticeable silence)
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: Some of the things mentioned as being discussed in other sections further would’ve been helpful to understand more for the excerpts given here. This was a lot of information to take in and I would have benefited from going through it a bit more slowly with chances to practice identifying this different parts of a sentence, or different uses for words, more to get more familiar with the vocabulary (or “toolset” so to speak)
+</p>
+<h1>
+Wasow, T. (2017). Generative grammar. In M Aronoff &amp; J. Rees-Miller (Eds.), <i>The handbook of linguistics,</i> 2nd ed. (Chapter 7, pp. 119-140). Oxford, UK: Blackwell.
+</h1>
+<p>
+First thoughts: Another textbook chapter, although given how many notes I ended up writing down here I don’t think that will prevent me from having a lot of thoughts. Generative grammar, does this refer to the gerund? The genitive declension of nouns? Or the generating of new grammar rules? Probably the latter; language is at it’s best when it is descriptivist, not prescriptivist!
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+Oh no I can’t highlight sentences. “I hope that we shall be able easily to figure out to whom to talk” absolutely a sentence where the adverb splitting the infinitive reads so much easier (that’s a so called “no-no” that I always found very silly. What’s so bad about it??)
+</li>
+<li>
+“The prescriptions of traditional grammar are largely attempts to impose the speech patterns of one region, class, ethnicity, or generation on speakers belonging to other groups” A great explanation of the inherent bigotry, classism and antiBlackness of belittling other dialects like AAVE!
+</li>
+<li>
+I already like this chapter a lot! The norms of prescriptive grammar ARE like AKC breed standards!!
+</li>
+<li>
+This chapter also talks about how there are technically an infinite number of potential sensical sentences in any given language (which is so poetic) and that the goal of a linguist’s construction of a language’s grammar is determining the finite set of rules for that what makes sentences sensical or not
+</li>
+<li>
+The goal of generative grammar is describing languages systematically as opposed to more anecdotally as traditional grammars do
+</li>
+<li>
+“The upper bound exists because of limits on human memory and patience, not because of any linguistically interesting facts” I wonder if the knock out of Wernicke’s area has some kind of subjective experience of having forgotten language/sentence structure, or if it’s characterized by a different kind of subjective experience? Answering questions of how to learn about the experiences of humans who cannot communicate through language and the experiences of non-human animals without this capacity might inform the other. Very off topic, but something that might be interesting!
+</li>
+<li>
+“Linguistic analyses should be maximally general.” Occam’s Razor!
+</li>
+<li>
+Determining that both imperative sentences and declarative sentences have an initial “you will” that informs word choice in these tags (that generalization) sounds like the kind of thing that might be really helpful for determining how cognitive systems work. More specifically, determining these whys that systems have in common rather than looking so deeply into the every move that the system might make! I’ve been thinking a lot about this ever since the first module and reading about the many theories of how cognitive processes work
+</li>
+<li>
+“Argument from the poverty of the stimulus” as Noam Chomsky states, there must be some sort of innateness or “mental organ” that specifically is adapted for language acquisition as all humans are able to learn language with “little apparent effort or explicit instruction”
+</li>
+<li>
+The X-bar theory rules seem to only apply to languages like english where word order is particularly meaningful. In latin, words that would go in a single clause in english could be found very far apart in the sentence, particularly in prose where holding the proper meter is more important than perfect clarity. It could also be argued than when in meter, the structure of the meter itself (the choice of meter, when things break meter or not, but also just how words fall in it) were in itself providing information about whatever is being written/spoken about.
+</li>
+<li>
+Oh exciting immediately they recognize that schemas that stipulate word order are not applicable to a universal grammar!
+</li>
+<li>
+A reflexive pronoun must have a local antecedent, and a nonreflexive pronoun may not.
+</li>
+<li>
+Another example: Protect (me/yourself/him) all show that declaratives should be treated as having second-person subjects (close the door! -&gt; will you close the door!)
+</li>
+<li>
+I’m not really understanding this example of a single long movement or several smaller movements wrt moving a filler from the gap to the location of the wh-phrase
+</li>
+<li>
+I guess all I need to know is that “long-distance filler-gap dependencies are mediated by the intervening material” which must mean several smaller movements!
+</li>
+<li>
+Some language employ different complementizers in the region between a filler and gap than elsewhere (eg two different words for “that” used in these two contexts)
+</li>
+<li>
+Island constraints: the gap mentioned above may not be in a relative clause if the filler is outside of it. Also, a gap cannot be in a coordinate conjoined structure not containing its filler, unless all conjuncts have gaps filled by the filler (eg you can say “who did x and y” ONLY if who is appropriate for both x and y as individual questions)
+</li>
+<li>
+The term “local” in binding principles means “in the argument structure of the same predicate”
+</li>
+<li>
+GAP: a feature taking another feature as its value can encode what is displaced. I don’t fully understand this but I expect it be talked about further and hope that this will help me in the future
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: Overall I was excited for this chapter initially but I felt that it delved very specifically into a few examples of the kinds of things considered by generative linguistics rather than giving an overview of history and reach of this kind of research. Although I did enjoy the specific examples of sentences for these issues, and the only thing I didn’t understand was the explanation of the GAP where the author didn’t use these kinds of examples.
+</p>
+<h1>
+Valian, V. (2014). Arguing about innateness. <i>Journal of Child Language,</i> 41 (S1), 78-92.
+</h1>
+<p>
+First thoughts: Innateness refers to the mental language organ or language acquisition faculty of sorts that is species-specific and something all humans are born with. This article is arguing about it, so maybe it is making some kind of assessment of just how innate language acquisition is, perhaps referencing certain contexts of failure of language acquisition or something like that?
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+Models of syntax acquisition have to cover the following:
+<ul>
+<li>
+the content of the initial state/child’s innate endowment (how much of language learning is instinct)
+</li>
+<li>
+the content of the final state, the adult’s syntactic knowledge (what we can/do learn/the content of the languageP
+</li>
+<li>
+the mechanism that gets the learner from initial to final (how exactly we learn language)
+</li>
+<li>
+the role of input in that process
+</li>
+</ul>
+</li>
+<li>
+Constructionism: children acquire pairings of forms and meanings for constructions in the same way they acquire pairings of forms and meaning for individual lexical items. Basically, I think, you learn all the different options for making a sentence and there isn’t much as far as network or connection between them. This theory assumes nothing about language acquisition is innate
+</li>
+<li>
+However if you cannot get something from nothing, and adults syntactic knowledge requires an abstract grammar and hierarchical representation, as generative grammar states, you do need to assume a level of innate syntax of some abstract nature. For these reasons in considering how children acquire language, we need to also think about what we think about how language exists in the adult mind
+</li>
+<li>
+Nativism: the doctrine that there are innate ideas
+</li>
+<li>
+Empiricism: the doctrine that there are not innate ideas
+</li>
+<li>
+“Chinese, for example, not only does not express Tense overtly in the morphology, but may also not have a syntactic representation of Tense.” A great point I think about a lot while I read these linguistics papers! Languages like mandarin (and I suspect cantonese too but I am not sure) are so different from english in the way that sentences are structured to express thoughts/ideas, and the way that things like questions and tense are expressed but also the way that tone has a influence on meaning of the word as well
+</li>
+<li>
+“Empirical arguments that language is special highlight the human predisposition to learn language without specifying what content might be innate or exactly how language is special. Empirical arguments that language is not special highlight commonalities between humans and other species, or between linguistic concepts and other concepts, or between mechanisms of learning language and learning in other domains.” Just a great overview of the claims two schools of thoughts are making, to keep them in context moving forward
+</li>
+<li>
+Essentially these arguments seem to be going through each example of a syntactic skill/effect/concept/something of the sort, and identifying that it is not necessarily a good skill to look into to determine what is or isn’t innate about syntax.
+</li>
+<li>
+“Infrahuman primates like bonobos can make use of some sound−meaning correspondences for lexical items but they never develop syntax.“ I wonder about arguments like this, particularly in the case of claiming that dogs are incapable of this kind of understanding. I just don’t understand the difference between a human (or a bonobo, most critically) coming to understand the sound of a word as representative of an object or action, and that being considered a lexical item in their brains, but that this cannot be the case for dogs. Of course it’s an association between a given individual sound and a response, but given that the communication restraints for both dogs and bonobos are the same, in that they cannot talk to us to explain their thought process, how do we know it’s a lexical item for a bonobo and not a dog? This is something I’d love to learn more about. What makes something a cognitive representation and what makes something a “more primitive” association, and how much of that difference is reliant on whether or not a concept is able to be communicated verbally?
+</li>
+<li>
+“We can never be certain that we are dealing with different innate syntactic content rather than different concepts in other domains or different learning mechanisms.” Oh for sure! However on the flip side, we can never be sure that we are dealing with concepts in other domains rather than different innate syntactic content, as well.
+</li>
+<li>
+“If a child is exposed to a second language after the critical period ends, she or he will never fully acquire that language.” What a disappointing fact, makes learning languages a bit less fun to know there is a ceiling to how well you can learn it and integrate it!
+</li>
+<li>
+“The interesting claim that nativism makes is that there are innate ideas, not simply that there are innate learning mechanisms.” This distinction between ideas and learning mechanisms is an interesting one I’d love to dig into more to get a better understanding with some examples!
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: This was an interesting paper, again as it lays out data and in depth looks into the many pieces of evidence for or against two explanations of something yet unknown, right now today in this field.
+</p>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

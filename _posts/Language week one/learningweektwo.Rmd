@@ -1,0 +1,135 @@
+---
+title: "Language Module: Week one"
+description: |
+  Regarding language, reading some textbook sexcerpts on what language is, how we categorize the different parts of speech, and finally a paper on the innateness of syntax!
+author:
+  - name: Miranda Trapani 
+    affiliation: CUNY Graduate Center
+    affiliation_url: https://gc.cuny.edu/Home
+date: 10-11-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+
+<h1>Radford, A., Atkinson, M., Britain, D., Clahsen, H., & Spencer, A. (2009). <i>Linguistics: An
+introduction</i> (2nd edition). Cambridge, UK: Cambridge University Press. pgs 1-16, 129-135, 247-253, 257-262</h1>
+
+<p>First thoughts: A linguistics textbook! A lot of short excerpts from it too. As this is a textbook, I am hoping it will be quicker read as it will be intentionally structured to convey new information to me. Having read over this assignment I’m a bit nervous but hopefully these excerpts, which seem to be exactly the topics I need to familiarize myself with, will help. This time a lot of these little thoughts and notes will be copying down information for reference.</p>
+
+<p>Thoughts while reading:<ul>
+<li> “unless we have a view on the nature of the relevant cognitive system, it makes no sense to enquire into its acquisition, its use in production and comprehension and its representation in the brain.” I’m not 100% I agree with this in that I don’t see how needing to know the cognitive system of linguistics (or anything) is necessary to learning about the neuroscience of it. Except maybe enough to know when you are utilizing that particular cognitive skill. If anything, observations of the neurophysiological routes that kind of thinking takes place might be informative to the nature of the system itself.</li>
+<li> “This is a major methodological difference between linguists and cognitive psychologists in their study of the human mind, and some critics might see it as making linguistics unscientific or subjective.” Why?? This is just what fieldwork and observational data is!</li>
+<li> A sentence with an asterisk is conventional indication that that sentence is not a possible sentence </li>
+<li> The four questions of linguistics: <ol>
+<li> What is the nature of the cognitive system which we identify with knowing
+a language? (linguistics itself)</li>
+<li> How do we acquire such a system? (developmental linguistics)</li>
+<li> How is this system used in our production and comprehension of speech? (psycholinguistics)</li>
+<li> How is this system represented in the brain? (neurolinguistics)</li></ol></li>
+<li> “But the infinite nature of the set of English sentences, exemplified by those in (9), does not entail that the principles of combination used in constructing these sentences are also infinite; and it is these principles which form part of a grammar.” So basically linguistics studies these finite rules and how they work to express the infinite number of ways that language can be used to communicate infinite numbers of concepts, thoughts, experiences, etc?</li>
+<li> The task of linguistics is to develop of theory of generative grammar (a theory about how phrases and sentences are formed)</li>
+<li> The phonetics of linguistics is very interesting because I am sure that the difference between whether or not you are a studying a tonal language like mandarin makes such a big influence on the cognitive system involved </li>
+<li> The grammar of a language has four components: a lexicon, a syntactic component, a PF (Phonological form) component, and an LF (Logical form) component)</li>
+<li> Linguistics also attempts to develop a theory for a universal grammar, that is rules that govern all languages</li>
+<li> Innateness hypothesis: Chomsky’s hypothesis that the course of language acquisition is determined by an innate language faculty</li>
+<li> “but when they do this, it is to ensure that children speak truthfully; grammatical correctness is not their target.” I’ve seen many instances of parents correcting their childrens’ grammar</li>
+<li> Developmental linguists are also interested in a set of principles of Universal Grammar as the innate language faculty is not dependent on language of the parents but on the language that the child hears during the acquisition period (I wonder how often comparisons have been made between monolingual and bilingual children during this period?)</li>
+<li> Sentence comprehension must involve something in addition to the grammar</li>
+<li> “this sort of brain damage almost always occurs in the left side of the brain (the left hemisphere). Damage to similar areas in the right hemisphere usually gives rise to entirely different deficits that have little to do with language.” Not always! It is sometimes flipped for people, I believe this flip is correlated/related to left-handedness as well but I cannot be if one is ALWAYS seen with the other or not as it has been a while since my last neuroscience course </li>
+<li> Dichronic methods of studying language change: comparing excerpts/manuscripts across time periods to language today. Issue is that this is biased toward only a non-random subset of the population (the wealthy that were able to afford writing tools and formal writing education) and does not capture language change across communities in which language remains strictly oral. Synchronic (apparent time) approach: comparing language at a single instance across generations instead. This is much more representative of a community, although differences across generations at a given time may not be due to linguistic change. Variable language features can be due to age variation</li>
+<li> The parts of the sentence:<ul>
+<li>Nouns, verbs, and adjectives I am already very familiar with!</li>
+<li> Definite/indefinite article: the/a or an</li>
+<li> Complements: the noun or phrase that is receiving the verb (the object?)</li>
+<li> Subject: the one performing the “main” verb, in some way</li>
+<li> Arguments: subjects and complements are arguments of verbs</li>
+<li> Adverb: modifies a verb the way an adjective modifies a noun </li>
+<li> Prepositions: typically serve to relate nouns to events in space or time (under/before/about/of)</li></ul></li>
+<li> There are content words (nouns, verbs, adjectives, adverbs, and prepositions) and there are function words (words like which, to, that, have been, etc) which fall into functional categories (articles are also function words)</li>
+<li> The function of the article is more or less to make what the noun refers to more or less specific (buying a car vs buying the car). Demonstratives (this or that) can be even more specific. These are all part of the class of function words called determiners (D)</li>
+<li> Auxiliary verb (can, will, must, have, be) are a kind of function word that precede lexical verbs and can be moved to make a sentence a question, or negated to influence whether the verb in question is happening</li>
+<li> The function word to accompanies verbs to form the infinitive (to run, to read, etc) it can be split by an adverb (to really run, etc) but this is often avoided as it is cumbersome (to quickly run vs to run quickly)</li>
+<li> Pronouns: stand for noun expression, most common are personal pronouns (I/we/he/them/you/it/us etc)</li>
+<li> Coordinating conjunctions: and, but, or. These conjunctions join words or phrases together to form larger phrases</li>
+<li> Complementisers: that, these are words that introduce a complement clause (if and for as well)</li>
+<li> “I/We/You/They smoke/*smokes cigars” I don’t think smokes is appropriate for any of those pronouns</li>
+<li> “To use the relevant grammatical terminology, we can say that an auxiliary or a verb is finite if it inflects for tense/agreement and has a nominative subject, and nonfinite if it doesn’t inflect for tense or agreement and doesn’t have a nominative subject” Up until now I have been pretty familiar with different declensions of nouns (nominative/accusative/genitive) as well as the different between main and complement clauses from studying latin, but this is a great tool for expressing/knowing which verbs are finite/nonfinite and that I wanted to write down!</li>
+<li> This is a very interesting perspective as it seems like linguistics terminology and terminology when studying english as a language are just a little bit different. At least it seems that way in that I’ve never heard of tense markers being used as “aspect,” but rather that an activity that is ongoing is in the perfect tense, for example (again a latin example, however)</li>
+<li> As I read more it seems it is latin that has tense organized in this way, in that instead there is only the perfect participle to announce that an action is complete wrt tense. Interesting!</li>
+<li> Some notes on abbreviations in labelled tree diagrams: TP (a merging of an infinitival tense particle, T, with a verb phrase, VP) (also can be called a tensed auxiliary phrase) DP (determiner phrase) PP (prepositional phrase)</li>
+<li> Proposition is the meaning expressed by the utterance of a sentence</li>
+<li> Deictic words: words like personal pronouns that require context for their interpretation</li>
+<li> Information structure: a sentence/utterance can have new information (usually in the context of a response to a question) and given information </li>
+<li> Performative verbs (order, assure, conclude) are words for speech acts (actions performed through language)</li>
+<li> Cooperative principle: ordinary conversation is governed by this, essentially people in a conversation must be helpful to one another. This means following four maxims: quality (don’t lie) quantity (don’t over explain/over inform) relation (say something relevant) and manner (being perspicuous, which honestly just sounds like a repeat of the last 3)</li> 
+<li> “Here, however, context seems to be embracing the full set of beliefs that speakers and hearers have and inferences that they might make on the basis of those beliefs. Importantly, however, when computing the full meaning of a discourse, we obviously don’t try to deploy everything we know or believe about the world or all the possible inferences that we could draw” This sentence is particularly interesting to me, I think because determining this context sounds like the kind of thing that would be a big topic of study for sociolinguistics.</li>
+<li> “The least clear of Grice’s maxims is that of Relation: what does it mean for an utterance to be relevant?“ Disagree, I have no idea how manner is supposed to be different from the previous three!</li>
+<li> Relevance theory: speakers do (or should) comply with a communicative principle of relevance, basically that the information is relevant to the situation, additionally an utterance should have a “positive cognitive effects” (something new is learned/added, essentially) and that if this information is not genuinely new (does not provide a new inference the hearer can make) or the information is too hard to infer (requires too much effort) then it’s not very relevant. This theory is not a buildup of Grice’s maxims but an alternative explanation</li>
+<li> Conversation analysis: study of devices people use in conversation to manage the conversation itself (indicate when someone doesn’t want to talk about a subject, or is done talking, or someone is interested in hearing more, etc)</li>
+<li> Adjacency pairs: one such device; the first utterance virtually demands a response, which would be the second</li>
+<li> Transition relevance places (TRP): the points in which a second eron can take up the talk (the most obvious is a noticeable silence)</li></ul></p>
+
+<p>Final thoughts: Some of the things mentioned as being discussed in other sections further would’ve been helpful to understand more for the excerpts given here. This was a lot of information to take in and I would have benefited from going through it a bit more slowly with chances to practice identifying this different parts of a sentence, or different uses for words, more to get more familiar with the vocabulary (or “toolset” so to speak)</p>
+
+<h1>Wasow, T. (2017). Generative grammar. In M Aronoff & J. Rees-Miller (Eds.), <i>The handbook of linguistics,</i> 2nd ed. (Chapter 7, pp. 119-140). Oxford, UK: Blackwell.</h1>
+
+<p>First thoughts: Another textbook chapter, although given how many notes I ended up writing down here I don’t think that will prevent me from having a lot of thoughts. Generative grammar, does this refer to the gerund? The genitive declension of nouns? Or the generating of new grammar rules? Probably the latter; language is at it’s best when it is descriptivist, not prescriptivist! </p>
+
+<p>Thoughts while reading: <ul>
+<li> Oh no I can’t highlight sentences. “I hope that we shall be able easily to figure out to whom to talk” absolutely a sentence where the adverb splitting the infinitive reads so much easier (that’s a so called “no-no” that I always found very silly. What’s so bad about it??)</li>
+<li> “The prescriptions of traditional grammar are largely attempts to impose the speech patterns of one region, class, ethnicity, or generation on speakers belonging to other groups” A great explanation of the inherent bigotry, classism and antiBlackness of belittling other dialects like AAVE!</li>
+<li> I already like this chapter a lot! The norms of prescriptive grammar ARE like AKC breed standards!!</li>
+<li> This chapter also talks about how there are technically an infinite number of potential sensical sentences in any given language (which is so poetic) and that the goal of a linguist’s construction of a language’s grammar is determining the finite set of rules for that what makes sentences sensical or not</li>
+<li> The goal of generative grammar is describing languages systematically as opposed to more anecdotally as traditional grammars do</li>
+<li> “The upper bound exists because of limits on human memory and patience, not because of any linguistically interesting facts” I wonder if the knock out of Wernicke’s area has some kind of subjective experience of having forgotten language/sentence structure, or if it’s characterized by a different kind of subjective experience? Answering questions of how to learn about the experiences of humans who cannot communicate through language and the experiences of non-human animals without this capacity might inform the other. Very off topic, but something that might be interesting!</li>
+<li> “Linguistic analyses should be maximally general.” Occam’s Razor!</li>
+<li> Determining that both imperative sentences and declarative sentences have an initial “you will” that informs word choice in these tags (that generalization) sounds like the kind of thing that might be really helpful for determining how cognitive systems work. More specifically, determining these whys that systems have in common rather than looking so deeply into the every move that the system might make! I’ve been thinking a lot about this ever since the first module and reading about the many theories of how cognitive processes work </li>
+<li> “Argument from the poverty of the stimulus” as Noam Chomsky states, there must be some sort of innateness or “mental organ” that specifically is adapted for language acquisition as all humans are able to learn language with “little apparent effort or explicit instruction”</li>
+<li> The X-bar theory rules seem to only apply to languages like english where word order is particularly meaningful. In latin, words that would go in a single clause in english could be found very far apart in the sentence, particularly in prose where holding the proper meter is more important than perfect clarity. It could also be argued than when in meter, the structure of the meter itself (the choice of meter, when things break meter or not, but also just how words fall in it) were in itself providing information about whatever is being written/spoken about.</li>
+<li> Oh exciting immediately they recognize that schemas that stipulate word order are not applicable to a universal grammar!</li>
+<li> A reflexive pronoun must have a local antecedent, and a nonreflexive pronoun may not.</li>
+<li> Another example: Protect (me/yourself/him) all show that declaratives should be treated as having second-person subjects (close the door! -> will you close the door!)</li>
+<li> I’m not really understanding this example of a single long movement or several smaller movements wrt moving a filler from the gap to the location of the wh-phrase</li>
+<li> I guess all I need to know is that “long-distance filler-gap dependencies are mediated by the intervening material” which must mean several smaller movements!</li>
+<li> Some language employ different complementizers in the region between a filler and gap than elsewhere (eg two different words for “that” used in these two contexts)</li>
+<li> Island constraints: the gap mentioned above may not be in a relative clause if the filler is outside of it. Also, a gap cannot be in a coordinate conjoined structure not containing its filler, unless all conjuncts have gaps filled by the filler (eg you can say “who did x and y” ONLY if who is appropriate for both x and y as individual questions)</li>
+<li>  The term “local” in binding principles means “in the argument structure of the same predicate”</li>
+<li> GAP: a feature taking another feature as its value can encode what is displaced. I don’t fully understand this but I expect it be talked about further and hope that this will help me in the future</li></ul></p>
+
+<p>Final thoughts: Overall I was excited for this chapter initially but I felt that it delved very specifically into a few examples of the kinds of things considered by generative linguistics rather than giving an overview of history and reach of this kind of research. Although I did enjoy the specific examples of sentences for these issues, and the only thing I didn’t understand was the explanation of the GAP where the author didn’t use these kinds of examples.</p>
+
+<h1>Valian, V. (2014). Arguing about innateness. <i>Journal of Child Language,</i> 41 (S1), 78-92.</h1>
+
+<p>First thoughts: Innateness refers to the mental language organ or language acquisition faculty of sorts that is species-specific and something all humans are born with. This article is arguing about it, so maybe it is making some kind of assessment of just how innate language acquisition is, perhaps referencing certain contexts of failure of language acquisition or something like that?</p>
+
+<p>Thoughts while reading:<ul>
+<li> Models of syntax acquisition have to cover the following:<ul>
+<li> the content of the initial state/child’s innate endowment (how much of language learning is instinct)</li>
+<li> the content of the final state, the adult’s syntactic knowledge (what we can/do learn/the content of the languageP</li>
+<li> the mechanism that gets the learner from initial to final (how exactly we learn language)</li>
+<li> the role of input in that process </li></ul></li>
+<li>  Constructionism: children acquire pairings of forms and meanings for constructions in the same way they acquire pairings of forms and meaning for individual lexical items. Basically, I think, you learn all the different options for making a sentence and there isn’t much as far as network or connection between them. This theory assumes nothing about language acquisition is innate</li>
+<li> However if you cannot get something from nothing, and adults syntactic knowledge requires an abstract grammar and hierarchical representation, as generative grammar states, you do need to assume a level of innate syntax of some abstract nature. For these reasons in considering how children acquire language, we need to also think about what we think about how language exists in the adult mind</li>
+<li> Nativism: the doctrine that there are innate ideas</li>
+<li> Empiricism: the doctrine that there are not innate ideas</li>
+<li> “Chinese, for example, not only does not express Tense overtly in the morphology, but may also not have a syntactic representation of Tense.” A great point I think about a lot while I read these linguistics papers! Languages like mandarin (and I suspect cantonese too but I am not sure) are so different from english in the way that sentences are structured to express thoughts/ideas, and the way that things like questions and tense are expressed but also the way that tone has a influence on meaning of the word as well </li>
+<li> “Empirical arguments that language is special highlight the human predisposition to learn language without specifying what content might be innate or exactly how language is special. Empirical arguments that language is not special highlight commonalities between humans and other species, or between linguistic concepts and other concepts, or between mechanisms of learning language and learning in other domains.” Just a great overview of the claims two schools of thoughts are making, to keep them in context moving forward</li>
+<li> Essentially these arguments seem to be going through each example of a syntactic skill/effect/concept/something of the sort, and identifying that it is not necessarily a good skill to look into to determine what is or isn’t innate about syntax.</li>
+<li> “Infrahuman primates like bonobos can make use of some sound−meaning correspondences for lexical items but they never develop syntax.“ I wonder about arguments like this, particularly in the case of claiming that dogs are incapable of this kind of understanding. I just don’t understand the difference between a human (or a bonobo, most critically) coming to understand the sound of a word as representative of an object or action, and that being considered a lexical item in their brains, but that this cannot be the case for dogs. Of course it’s an association between a given individual sound and a response, but given that the communication restraints for both dogs and bonobos are the same, in that they cannot talk to us to explain their thought process, how do we know it’s a lexical item for a bonobo and not a dog? This is something I’d love to learn more about. What makes something a cognitive representation and what makes something a “more primitive” association, and how much of that difference is reliant on whether or not a concept is able to be communicated verbally?</li>
+<li> “We can never be certain that we are dealing with different innate syntactic content rather than different concepts in other domains or different learning mechanisms.” Oh for sure! However on the flip side, we can never be sure that we are dealing with concepts in other domains rather than different innate syntactic content, as well.</li>
+<li> “If a child is exposed to a second language after the critical period ends, she or he will never fully acquire that language.” What a disappointing fact, makes learning languages a bit less fun to know there is a ceiling to how well you can learn it and integrate it!</li>
+<li> “The interesting claim that nativism makes is that there are innate ideas, not simply that there are innate learning mechanisms.” This distinction between ideas and learning mechanisms is an interesting one I’d love to dig into more to get a better understanding with some examples!</li></ul></p>
+
+<p>Final thoughts: This was an interesting paper, again as it lays out data and in depth looks into the many pieces of evidence for or against two explanations of something yet unknown, right now today in this field. </p>
+
+
+
