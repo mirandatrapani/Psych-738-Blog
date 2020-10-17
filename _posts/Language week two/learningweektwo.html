@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+  <title>Language Module: Week two</title>
+  
+  <meta property="description" itemprop="description" content="In which we dig into language studies that look into gender, and where I have a lot to say about the nonbinary experience and where it&#39;s missing."/>
+  
+  
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2020-10-15"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-10-15"/>
+  <meta name="article:author" content="Miranda Trapani"/>
+  
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="Language Module: Week two"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="In which we dig into language studies that look into gender, and where I have a lot to say about the nonbinary experience and where it&#39;s missing."/>
+  <meta property="og:locale" content="en_US"/>
+  
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Language Module: Week two"/>
+  <meta property="twitter:description" content="In which we dig into language studies that look into gender, and where I have a lot to say about the nonbinary experience and where it&#39;s missing."/>
+  
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Language Module: Week two"]},{"type":"character","attributes":{},"value":["In which we dig into language studies that look into gender, and where I have a lot to say about the nonbinary experience and where it's missing.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Miranda Trapani"]},{"type":"character","attributes":{},"value":["CUNY Graduate Center"]},{"type":"character","attributes":{},"value":["https://gc.cuny.edu/Home"]}]}]},{"type":"character","attributes":{},"value":["10-15-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["learningweekone.html","learningweekone_files/bowser-1.9.3/bowser.min.js","learningweekone_files/distill-2.2.21/template.v2.js","learningweekone_files/jquery-1.11.3/jquery.min.js","learningweekone_files/webcomponents-2.0.0/webcomponents.js","learningweektwo_files/bowser-1.9.3/bowser.min.js","learningweektwo_files/distill-2.2.21/template.v2.js","learningweektwo_files/jquery-1.11.3/jquery.min.js","learningweektwo_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+  
+  <style type="text/css">
+  
+  body {
+    background-color: white;
+  }
+  
+  .pandoc-table {
+    width: 100%;
+  }
+  
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+  
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+  
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+  
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+  
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+  
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+  
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .shaded .shaded-content {
+    background: white;
+  }
+  
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  d-article {
+    padding-bottom: 30px;
+  }
+  
+  d-appendix {
+    padding-top: 30px;
+  }
+  
+  d-article>p>img {
+    width: 100%;
+  }
+  
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+  
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+  
+  /* CSS for table of contents */
+  
+  .d-toc {
+    color: rgba(0,0,0,0.8);
+    font-size: 0.8em;
+    line-height: 1em;
+  }
+  
+  .d-toc-header {
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1.3em;
+  }
+  
+  .d-toc a {
+    border-bottom: none;
+  }
+  
+  .d-toc ul {
+    padding-left: 0;
+  }
+  
+  .d-toc li>ul {
+    padding-top: 0.8em;
+    padding-left: 16px;
+    margin-bottom: 0.6em;
+  }
+  
+  .d-toc ul,
+  .d-toc li {
+    list-style-type: none;
+  }
+  
+  .d-toc li {
+    margin-bottom: 0.9em;
+  }
+  
+  .d-toc-separator {
+    margin-top: 20px;
+    margin-bottom: 2em;
+  }
+  
+  .d-article-with-toc {
+    border-top: none;
+    padding-top: 0;
+  }
+  
+  
+  
+  /* Tweak code blocks (note that this CSS is repeated above in an injection
+     into the d-code shadow dom) */
+  
+  d-code {
+    overflow-x: auto !important;
+  }
+  
+  pre.d-code code.d-code {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+  
+  pre.text-output {
+  
+    font-size: 12px;
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+  
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  
+  @media(min-width: 768px) {
+  
+  d-code {
+    overflow-x: visible !important;
+  }
+  
+  pre.d-code code.d-code  {
+      padding-left: 18px;
+      font-size: 14px;
+  }
+  pre.text-output {
+    font-size: 14px;
+  }
+  }
+  
+  /* Figure */
+  
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+  
+  .figure img {
+    width: 100%;
+  }
+  
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+  
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+  
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+  
+  
+  
+  /* Tweak 1000px media break to show more text */
+  
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+  
+    .grid {
+      grid-column-gap: 16px;
+    }
+  
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+  
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+  
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+  
+  
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+  
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  
+  /* Social footer */
+  
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+  
+  .disqus-comments {
+    margin-right: 30px;
+  }
+  
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  
+  #disqus_thread {
+    margin-top: 30px;
+  }
+  
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+  
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+  
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+  
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+  
+  
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+  
+  
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+  
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+  
+  
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+  
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+  
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+  
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+  
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+  
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+  
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+  
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+  
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+  
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+  
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  
+  </style>
+  
+  <script type="application/javascript">
+  
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+  
+  // show body when load is complete
+  function on_load_complete() {
+  
+    // set body to visible
+    document.body.style.visibility = 'visible';
+  
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+  
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+  
+  function init_distill() {
+  
+    init_common();
+  
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+  
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+  
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+  
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+  
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+  
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+  
+    // create d-bibliography
+    var bibliography = $('<d-bibliography></d-bibliography>');
+    $('#distill-bibliography').wrap(bibliography);
+  
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+  
+    // replace citations with <d-cite>
+    $('.citation').each(function(i, val) {
+      appendix = true;
+      var cites = $(this).attr('data-cites').split(" ");
+      var dt_cite = $('<d-cite></d-cite>');
+      dt_cite.attr('key', cites.join());
+      $(this).replaceWith(dt_cite);
+    });
+    // remove refs
+    $('#refs').remove();
+  
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+  
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-toc a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+  
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+  
+    // replace code blocks with d-code
+    $('pre>code').each(function(i, val) {
+      var code = $(this);
+      var pre = code.parent();
+      var clz = "";
+      var language = pre.attr('class');
+      if (language) {
+        // map unknown languages to "clike" (without this they just dissapear)
+        if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                                 "javascript", "js", "julia", "lua", "markdown",
+                                 "markup", "mathml", "python", "svg", "xml"]) == -1)
+          language = "clike";
+        language = ' language="' + language + '"';
+        var dt_code = $('<d-code block' + language + clz + '></d-code>');
+        dt_code.text(code.text());
+        pre.replaceWith(dt_code);
+      } else {
+        code.addClass('text-output').unwrap().changeElementType('pre');
+      }
+    });
+  
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+  
+      // capture layout
+      var layout = $(this).attr('data-layout');
+  
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('d-code, pre.text-output, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+  
+  
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+  
+    // load distill framework
+    load_distill_framework();
+  
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+  
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+  
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+  
+      // table of contents
+      if (have_authors) // adjust border if we are in authors
+        $('.d-toc').parent().addClass('d-article-with-toc');
+  
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+  
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+  
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+  
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+  
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+  
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+  
+      // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+      $('d-code').each(function(i, val) {
+        var style = document.createElement('style');
+        style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                          '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+        if (this.shadowRoot)
+          this.shadowRoot.appendChild(style);
+      });
+  
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+  
+      // clear polling timer
+      clearInterval(tid);
+  
+      // show body now that everything is ready
+      on_load_complete();
+    }
+  
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+  
+  }
+  
+  function init_downlevel() {
+  
+    init_common();
+  
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+  
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+  
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+  
+    // remove toc
+    $('.d-toc-header').remove();
+    $('.d-toc').remove();
+    $('.d-toc-separator').remove();
+  
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+  
+  
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+  
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+  
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+  
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+  
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+  
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+  
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+  
+    $('body').addClass('downlevel');
+  
+    on_load_complete();
+  }
+  
+  
+  function init_common() {
+  
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+  
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+  
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+  
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+  
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+  
+      }
+    });
+  
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+  
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      });
+    }
+  
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+  
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+  
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+  
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+  
+  </script>
+  
+  <!--/radix_placeholder_distill-->
+  <script src="learningweektwo_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="learningweektwo_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="learningweektwo_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="learningweektwo_files/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Language Module: Week two","description":"In which we dig into language studies that look into gender, and where I have a lot to say about the nonbinary experience and where it's missing.","authors":[{"author":"Miranda Trapani","authorURL":"#","affiliation":"CUNY Graduate Center","affiliationURL":"https://gc.cuny.edu/Home"}],"publishedDate":"2020-10-15T00:00:00.000-04:00","citationText":"Trapani, 2020"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Language Module: Week two</h1>
+<p><p>In which we dig into language studies that look into gender, and where I have a lot to say about the nonbinary experience and where it’s missing.</p></p>
+</div>
+
+<div class="d-byline">
+  Miranda Trapani  (CUNY Graduate Center)<a href="https://gc.cuny.edu/Home" class="uri">https://gc.cuny.edu/Home</a>
+  
+<br/>10-15-2020
+</div>
+
+<div class="d-article">
+<h1>
+Jakiela, P., &amp; Ozier, O. (2020). <i>Gendered language.</i> IZA Discussion Papers, No. 13126, Institute of Labor Economics (IZA), Bonn.
+</h1>
+<p>
+First thoughts: This is a very long article that seems to be more of a meta analysis on gender in language, inherent gender designations of language, and how that is expressed. I hope that this will also look into the experiences and usages of language by people outside of the gender binary, as I feel that that is a particularly interesting and illuminating avenue for information on the relationship between gender and language, but I find that most literature to date ignores this.
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+“We do this within-country analysis separately in two contexts: using Afrobarometer data from four African countries (Kenya, Niger, Nigeria, and Uganda) and, separately, using the India Human Development Survey, which covers 33 Indian states.” Does that mean that this data only looks into these four African countries and India?
+</li>
+<li>
+“Our cross-country analysis suggests a robust negative relationship between grammatical gender and female labor force participation.“ In 5 countries with particularly high levels of inequality! What about relatively less sexist countries that still have very gendered language? In reading forward it looks like this is actually a supplementary comparison because these countries have prominent populations of both gendered and non gendered languages
+</li>
+<li>
+“We identify three: use of the plough, raising horses or camels, and regularly milking domestic animals” So these three pre-industrial activities are predicted to associate with how gendered a language is. However, this is meant to control for historical confounds on economic life, presumably because these activities were common before the Industrial Revolution? Why would we expect sentiments not to carry through and inform this period? Does this rely on the assumption that nobody is doing these activities any more? Or is it just that these activities were culturally gendered before the industrial age and are now? Why are they not of interest then? I don’t really understand the decision making process of how this data is analyzed.
+</li>
+<li>
+I just don’t understand why the 21st century industrial area is considered this prominent before and after point. Why is it not a realistic option to consider that the gendered aspect of language has been influencing Women’s economic control for longer than the past few hundred years?
+</li>
+<li>
+Sex =/= gender. I am interested to learn instead about the role of grammatical gender in cultures that have recognized more than two genders
+</li>
+<li>
+“Thus, the results suggest that grammatical gender shapes the way we think about inanimate objects without inherent biological gender” A very interesting finding, but there is no biological gender and I really feel that separating this false association between sex and gender and instead looking at true gender rather than sex (particularly in the way in which nonbinary people understand and express their gender and how they identify it as unique from the binary genders) would offer a lot of information on what role the binary genders play, information which could inform how gender in language modulates, informs, or is affected by those relationships.
+</li>
+<li>
+“In this context, policies such as single-sex schools could improve welfare and increase human capital by allowing girls (or boys) to attend school without the psychic costs associated with entering an environment that is perceived as the domain of the opposite sex” I’m not sure that this is the right conclusion to come to. This solution only, potentially, removes this psychic cost for girls in a culture where the language places school in a male-domain, but this ignores the way that segregated schools wouldn’t necessarily provide the same education (particularly under this assumption that in a language with masculinized school, there is such psychic cost to girls to attend.) This solution just seems to ignore the wider cultural and social influencers and side step the core issue of gender in language (if that is the core issue, although this paper I believe is stating this so, within the context of this paper is where I am keeping this critique)
+</li>
+<li>
+“Other policies that increase the net return to education | for example, eliminating school fees or making education compulsory (which introduces costs for non-attendance) | can have indirect effects on female enrollment by changing the expected proportion of girls who attend school.” These are much better potential solutions I think!
+</li>
+<li>
+“However, we do not wish to conflate cross-country differences in women’s outcomes with structural factors that impact labor force participation and educational attainment among both men and women. To rule out this possibility, we also report specifications where the outcome variable is the gender gap calculated as the linear difference between women’s and men’s outcomes (e.g. women’s labor force participation minus men’s labor force participation).” But wouldn’t it be reasonable to argue that these structural factors might also be influenced by gendered language, whether that is a two-way affect or both are influenced commonly by the gendered language?
+</li>
+<li>
+“Thus, the proportion of a country’s population whose native language is a gender language is a robust predictor of gender differences in labor force participation.” An overall finding of this paper
+</li>
+<li>
+So when including Europe, gendered language and education for women are positively associated, but when controlling for continent fixed effects (?) it becomes negative and almost significant. I just feel like the role of Europe here is indicative that much more is going on than just the gender aspect of language
+</li>
+<li>
+“Thus, in both Africa and India, we see that the cross-country pattern is largely replicated within country, even when restricting attention to indigenous languages that differ in terms of their grammatical gender structure.” But this was not significant at the cluster level, what does that mean for this conclusion?
+</li>
+<li>
+“The three traits so identified - use of the plough, riding horses or camels, and regularly milking domestic animals - reflect the organization of food production rather than pre-modern gender dynamics.” They cannot be both? How do we know?
+</li>
+<li>
+“Our results suggest that individuals should reflect upon the social consequences of their linguistic choices, as the nature of the language we speak may shape the way we think, and the way our children will think in the future.” This I agree with!
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: I do like what this paper was looking at, the overall topic of interest and the presence of gender in language and how that influences society, but I don’t like their choice of variables for societal response/reflection, as they seemed to require ignoring countries like most of Europe where education is compulsory until college, and they miss out on other, more subtle or yet-to-be-challenged societal expressions of gender assumptions and roles. I also found myself questioning a lot of their conclusions and where they came from. It’s possible I misunderstood or missed something there, however. Finally, I think that any study of gender, particularly as recent as 6 months ago, should absolutely be considering very seriously gender beyond the binary, especially how nonbinary experiences might inform or react to societal expectations of gender, and how the gender of language might influence all trans experiences. I really think there is a lot to learn in considering gender this way, as it is a more full and complete understanding of this social construct.
+</p>
+<h1>
+Gabriel, U., &amp; Gygax, P. (2016). Gender and linguistic sexism. In H. Giles &amp; A. Maass (Eds.), <i>Advances in intergroup communication,</i> 21, 177–192. Bern, Switzerland: Peter Lang. <a href="doi:10.3726/b10467" class="uri">doi:10.3726/b10467</a>
+</h1>
+<p>
+First thoughts: I suspect that this will be another paper that focuses on the gender binary and how gendered language influences societal bias against women in certain fields.
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+“suggesting that gender is relevant even when it is not, thus perpetuating differing expectations and gender stereotypes.“ Definitely agree!
+</li>
+<li>
+I’m not sure what is meant by the accessibility of gender
+</li>
+<li>
+“posits that individuals’ cognitive acts of self-categorization provide the psychological foundation of group processes.” Self identification theory isn’t something I’m previously familiar with, but I’m excited to read about it in the context of gender and linguistics! Hopefully this paper will touch on gender identity outside the binary a little bit
+</li>
+<li>
+“by increasing a person’s readiness to use gender as a category by making it more meaningful or relevant (one is more predisposed to attend to gender as this information is required when producing discourse).” Looks like it will just be looking in the framework of making assumptions based on gender instead.
+</li>
+<li>
+“the pronouns she and he refer to the sex of human referents” Even in 2016, this is an antiquated understanding of pronouns.
+</li>
+<li>
+“another is the invention of new forms to signal “either gender”” Appropriate language would be “any gender” and again I say these things partially to critique but also to highlight this interesting phenomenon; these papers studying the inherent gender bias of language, teasing it apart and speaking to its wider influences whether subconscious or not, continue to use gender biased language! It’s actually very interesting
+</li>
+<li>
+“It is precisely this asymmetry (i.e. feminine forms = women whereas masculine forms = men or other meanings) rather than the simple existence of sex-based gender systems that gives rise to the claim that languages can be sexist” A great way of explaining the issue!
+</li>
+<li>
+Nonetheless it frustrates me the way this paper is using sex and gender so interchangeably
+</li>
+<li>
+“English and Chinese, namely that the former differentiates between female and male pronouns, whereas the latter (at least orally) does not.” When I was in China that was a really cool thing to discover! Indeed, the pronoun for he/she/they/it is “Ta” (anglicized of course, I don’t remember the tone and the character is indeed different if the Ta is referring to a female or male person. I don’t know if there is a character for nonbinary people unfortunately)
+</li>
+<li>
+“Together, these findings provide preliminary evidence that the grammaticalization of gender influences the ease with which gender categories surface” And thus speak to the importance of being mindful of how we gender other humans through language, as these are clearly meaningful to our self concept of gender!
+</li>
+<li>
+“one could argue that although the mere existence of a sex-based gender system can be interpreted as a hint that a language community attaches sufficient significance to sex differences that it warrants them being represented by grammatical categories, this does not necessarily mean that the sexes are evaluated or treated differently” one could, but this reads like a pro-segregation “separate but equal” argument, so I’m not so sure that one should.
+</li>
+<li>
+“The small group of countries speaking a natural gender language received the highest Global Gender Gap score, mainly reflecting the fact that women’s access to political power was comparatively high in that group.” This implies that this metric, Global Gender Gap score, is higher when there is a smaller gender gap, which is confusing!
+</li>
+<li>
+“Results across all experiments, independently from the additional experimental manipulations, showed that participants gave fewer and slower positive responses to experimental word pairs that included a female kinship term (e.g. a sister) rather than a male kinship term (e.g. a brother), indicating a tendency to interpret the masculine form in the gender-specific sense rather than the generic sense“ Those results led me to the opposite conclusion, but maybe I have the meanings of gender-specific and generic mixed up? If something is understood in the generic sense that should mean that it is understood as a word for all humans regardless of gender. Thus because the feminine form was responded to slowly, one might interpret this as a point of deliberation over how gender modifies access (the question “can girls join?” being considered, essentially) as opposed to the male being interpreted in a generic sense (“oh yeah for sure people can be musicians” or something along those lines) but perhaps I don’t fully grasp the explanation
+</li>
+<li>
+“A simple increase in exposure to women – masculine form pairs was sufficient to partially erase the boundary represented by the use of masculine forms.” Love that!
+</li>
+<li>
+“Two main strategies for eliminating asymmetry have been suggested (for a review, see Hellinger &amp; Pauwels, 2007): visibility by feminization (e.g. use of dual forms in German: Studentinnen und Studenten [female and male students]), and de-gendering by neutralization (e.g. one form to refer to both men and women, such as nominalizsed forms in German. e.g., Studierende [those who study]).” to me, the second the clearly the best action as it doubly removes all implicit gender assumptions rather than attempts to curate an equal ratio of two, thus opening up language to inherently include trans people better
+</li>
+<li>
+“Although neutralization strategies should lead to interesting changes in speakers and readers’ mental representations of gender (and associated behaviors) they have not yet received much attention” Exactly! I would bet money that their lack of attention comes at least in part from transphobia
+</li>
+<li>
+“In summary, either strategy (feminization and neutralization) has advantages and disadvantages,” I don’t recall reading advantages nor disadvantages for neutralization, just that there is a paucity of research on this
+</li>
+<li>
+“One fruitful avenue for future research might thus be to compare how the linguistic strategies affect intergroup interactions, to explore whether they have disparate outcomes for women and men, and whether group membership predicts the support of either strategy” I’m very interested in this especially in the context of nonbinary folk, I think this will be my topic for the proposed study assignment!
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: Although this paper did not touch specifically on the nonbinary experience with respect to language, the research, conclusions, and focus was much more related and easily applied to concepts of gender beyond the binary, which I really appreciated!
+</p>
+<h1>
+Menegatti, M., &amp; Rubini, M. (2017). Gender bias and sexism in language. In H. Giles &amp; J. Harwood (Eds.), <i>Oxford Research Encyclopedia, Communication</i> (Vol. 1, pp. 451–468). New York: Oxford University Press.
+</h1>
+<p>
+First thoughts: This paper seems to focus on the expectations personality wise of men and women perpetuated through language. Another paper in which the trans and nonbinary experience would add a lot! Particularly because this paper seems to be talking about more subtle linguistic choices that reinforce these stereotypes. Subtle binary language is such a huge issue!
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+“Linguistic abstraction, thus, is a very subtle resource used to represent women in a less favorable way and thus to enact gender discrimination without meaning to discriminate or even be aware that this linguistic behavior has discriminatory results.“ Personally I am always very interested in the ways that subtleties of language influence social thought, so I bet this is going to be interesting
+</li>
+<li>
+genderless languages only have gender expressed through words specifically referring to gender (man/woman), natural gender languages primarily use pronouns to express gender, and grammatical gender languages designate a gender for every noun.
+</li>
+<li>
+“The insidious consequence is that people perceive gender bias in language as normative and enact gender discrimination by simply following communication rules”
+</li>
+<li>
+“favorable communal traits ascribed to women are also traits of defense that, when enacted in daily interaction, place a person in a subordinate, less powerful position. Thus, the favorable traits attributed to women may maintain their lower status and reinforce gender inequality.” I’m not so sure about this, I think that deeper thought on the influence on interpersonal dynamics that various types of generosity and kindness have. If it is possible to be kind in a way that assert dominance, for example, and which I think there must be, then it should also be feasible to say that this individual dynamic could in a way translate to the larger group. Not to say that this isn’t also part of the puzzle, just that there is more nuance than simply “women are taught to be kind, and kind people are subordinate.”
+</li>
+<li>
+“two forms of sexist prejudice: expressly hostile and subjectively benevolent. Hostile sexism encompasses a derogatory depiction of women and negative feelings toward them in order to justify male power, traditional gender roles, and men’s consideration of women as sexual objects. Benevolent sexisms is a more subtle form of prejudice toward women because it sees them as pure, kind, gentle, and in need of men’s protection, therefore justifying male dominance and women’s subordinate role” Oh man yes!! This is a case in all forms of oppression too, when you consider things like the model minority myth with regards to racial prejudice, or the fetishization of gay men by straight women particularly as this is seen as particularly benevolent due in part to the dynamic of men traditionally having power over women.
+</li>
+<li>
+“there is no male counterpart in current language use for terms such as virgin,” interesting because for me, the word virgin is completely gender neutral!
+</li>
+<li>
+“such as anchor, flight attendant, chairperson, or health operator (instead of nurse), in order to refer to men and women with one occupation term” and of course another pro, these terms also are inclusive of the entire gender spectrum
+</li>
+<li>
+“Content analyses of letters of recommendation for college (LaCroix, 1985) and graduate schools (Watson, 1987) revealed the use of stereotypical gender-related words, which describe female applicants as feminine and male applicants as masculine.” This is something that I have never thought of and surprisingly makes me a bit uncomfortable, to know that people are using such feminine-coded language for me without my knowledge.
+</li>
+<li>
+“Moreover, female candidates are asked to meet higher requirements and have to perform well on different evaluation dimensions to be selected, whereas justifications of men’s hiring and rejection are primarily based on the use of competence-related terms only.” Again the higher standards of the oppressed minority here is reminiscent of the hoops that BIPOC must jump through to be given the same opportunities as less competent white folk! This example doesn’t quite follow for queer people due to the different context of hiding or expressing ones’ identity, but one could argue that people are hypersensitive to PDA in queer couples over straight couples in a similar manner, for an analogous example.
+</li>
+<li>
+“This is because there is implicit agreement that the prototypical human being is male. Therefore, when speakers refer to a person with a generic term, it is assumed to be male unless there is an explicit indication to the contrary” Well put.
+</li>
+<li>
+“Interestingly, masculine linguistic forms may lead to assume more men than women to be in a professional group even for typical feminine professions, thus overriding the effects of gender stereotypes” Only in the context of positions historically associated with women, however.
+</li>
+<li>
+“Overall, the evidence reviewed here shows that “the choice of masculine words to perform generic functions had little to do with any linguistic superiority that these words might have relative to feminine or neuter words and a lot to do with the male dominance in society at large”” Yes!
+</li>
+<li>
+“This suggests that people who encounter gender-inclusive forms use them more themselves and, in turn, have more gender-balanced mental representations of social roles.” Thus the importance of identifying gender bias in our language, correcting it, and speaking out to correct it in others
+</li>
+<li>
+“modern (or neo) sexists express beliefs that indirectly condone the unequal treatment of women and men (Tougas, Brown, Beaton, &amp; Joly, 1995). The endorsement of modern sexist beliefs leads to less recognition and a higher likelihood of using sexist language. In contrast, those who do not endorse modern sexism may purposefully replace sexist language with nonsexist language, even if they may still have automatic associations that lead to the use of sexist linguistic forms” I would love some examples of the first (to name to others) and the second (to understand it better contextually) statements. Of course I could always read these articles, but I think they warrant further discussion here because their results are interesting!
+</li>
+<li>
+“Terms in the same category trigger similar cognitive inferences, which in turn exert a systematic influence on non-linguistic behavior” What an interesting observation!
+</li>
+<li>
+“Even more important, the linguistic intergroup bias is an implicit way to enact intergroup discrimination and prejudice, because individuals are able to censor or alter their responses to explicit or outward measures of those phenomena, but appear unable to spontaneously inhibit linguistic bias” This is really interesting too
+</li>
+<li>
+“Women were evaluated with greater proportions of negative ADJs (e.g., “She is not an innovative researcher”) independently of whether they were or were not selected for the position. In contrast, male applicants, even when rejected, were evaluated with many negative action verbs, which allow negative aspects to be limited to restricted contexts.” Which circles back to the previous finding/explanation of how descriptions of negative traits including adjectives (implying this is a part of the person and not likely to be changed) and including verbs (implying that this is potentially just in this scenario and may or may not be different next hiring round) has these differential influences on perception by hiring committees.
+</li>
+<li>
+“Overall, this research shows that selectors use language abstraction to implicitly communicate that the positive traits of men and the negative traits of women are stable across situations and more likely to remain unaltered than those of male applicants. This language, in turn, conveys a representation of women as having less worth than their male colleagues and could damage their future opportunities to enter academia or reach higher positions.” There it is.
+</li>
+<li>
+“Following this reasoning, it remains to understand at what point of girls’ and women’s lives their positive linguistic representation is dramatically reversed and language becomes a subtle means to maintain gender inequality” Very interesting and there are many things that I think of that might have some kind of influence on this phenomenon; do this lowered self esteem in boys lead to greater attempts to “get ahead” and to “aggressive tendencies” (or agentic) as a way of overcompensating for this? Or is this a reflection of attempting to reverse negative gender stereotypes by sort of “laying the praise on thick” when it comes to girls, and perhaps in a generation or two when these younger girls are older we will see a very different gender dynamic in the workplace?
+</li>
+<li>
+“At first, the majority of Swedish had negative attitudes toward the new word, but after two years the use of the word increased and the reactions become more positive” We love to see it! A sign that while people are resistant to change, it is not only possible but feasible to truly change peoples’ perspectives on many of these issues, the solutions are just system wide!
+</li>
+<li>
+“Thus, people should first be informed of the effects of holding and communicating gender stereotypic expectations, and then they should be formed to choice linguistic forms that facilitate gender equality” Absolutely! Education comes before behavioral change (which is a major shortcoming of “callout culture” but that is a very very long digression)
+</li>
+<li>
+“However, the use of feminine forms lead to less salary estimates (Horvath et al., 2016), perceptions of lower competence and warmth (Budziszewska, Hansen, &amp; Bilewicz, 2014), and worse evaluations (Formanowicz, Bedynska, Cislak, Braun, &amp; Sczesny, 2012).” A double edged sword highlighting the context-dependence of these adjustments.
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: This was also a very good paper. Particularly, the mindfulness to not confuse sex with gender inappropriately, in that this paper clearly refers to gender and not sex and does not use the two interchangeably was great and really speaks to the fact that the authors are at least more mindful of how the two work and what is really at play in social contexts. While there was still a paucity of reference to nonbinary language and how that might influence things, in this context I recognize that that also comes from a paucity of time in which nonbinary language is influencing these issues, as identified by their highlighting the case of the gender neutral pronoun’s introduction in Swedish.
+</p>
+<h1>
+Pérez, E. O., &amp; Tavits, M. (2019). Language influences public attitudes toward gender equality. <i>The Journal of Politics</i>, 81(1), 81-93.
+</h1>
+<p>
+First thoughts: This paper is similar to others except that it directly looks at the claim that speakers of a genderless language are more liberal in regards to gender equality than speakers of grammatical gender language. This is a very interesting idea but would definitely require comparisons across all languages as the first paper did! Even then, the influence of language I believe we have seen is indeed one that we can sensitize ourselves to (perhaps because it is a relic of a desensitization towards gender inequality?), so observations of correlations will become tricky due to the many other variables influencing these topics.
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+“Across these studies,our evidence indicates that the presence or absence of grammatical gender in a language may have significant consequences for mass opinion on gender equality—a fundamental social divide“ So glad they did this kind of study too, exactly what I said would be necessary for these kinds of claims! (Not in a “glad they listened to me” way but in a “glad I accurately identified a problem as evidence by the fact that they too did and addressed it”)
+</li>
+<li>
+“Gendered language speakers are also more likely to attain their own gender identity sooner than speakers of less gendered tongue” I would assume, and would be very interested in finding out, that this observation is relevant only to cis folk, and that on the flip side trans and especially nonbinary folk had an even longer timer identifying their gender for what it truly is as compared to nonbinary folk in countries with less gendered languages. Perhaps, and I think this is likely, their very relationship with their gender is informed both by language and culture. For example in native cultures they have the concept of Two-spirit which is a gender under the nonbinary umbrella that is only identified by native people both due to their having the language and culture in which this gender exists. Very interesting! Would love to see some studies that look into these phenomenon and how exactly they work
+</li>
+<li>
+“Russian have a 23% probability of strongly agreeing with greater efforts to recruit females to top government positions. But for respondents interviewing in Estonian, the probability of strongly agreeing with the same proposal climbs to 28%“ I think what’s important to keep in mind here, for perspective, is that while there was a reliable (and I believe significant?) shift in favor for the non gendered language, 23% and 28% are both really low! Which stresses that language, while an influence on sexism for sure, is not always sufficient for truly removing bias (as an unbiased response to the question “can a woman hold this position?” is 100% support).
+</li>
+<li>
+“To this slate, we added a placebo item asking respondents to indicate how justifiable they think suicide is, with 1 being “never justifiable” and 10 being “always justifiable.” “ Oh wow! I wonder how the emotional salience of this question influences responses though.
+</li>
+<li>
+“If this is the case, then respondents interviewing in Estonian should also be more likely to find suicide justifiable—a position that is opposite to the religious-conservative stance against suicide.” I’m not so sure that this is an accurate representation of the more “liberal” mindset on suicide, and I think actually speaks to the interesting phenomenon of conservatives and progressives tending to have essentially two different conversations over the same topic and finding it very difficult to recognize the other’s point (although this misunderstanding is often unidirectional and sometimes even willfull, in my experience). A digression for sure, though.
+</li>
+<li>
+“Adapting these insights to politics, we hypothesize that language will weakly affect opinions about gender equality when norms exist about socially acceptable behaviors or beliefs” Yes, exactly what I was saying!
+</li>
+<li>
+“Thus, salient social norms seem to undercut the impact language would have had on people’s opinions about gender equality“ Yes!
+</li>
+<li>
+“individuals who speak a genderless language are more likely to express gender-equal attitudes. This result broadly mirrors our main experimental findings.“ Across many countries! I think this is the same dataset as the first paper as well, isn’t it?
+</li>
+<li>
+“opinions about gender equality are constructed with the help of language, rather than being inflexibly determined by it.” Yes exactly!
+</li>
+<li>
+“For example, in nations where a gendered tongue prevails—and thus where gender distinctions are stressed—it might pay to advocate for policies like quotas, which seize on women’s perceived relative strengths in politics to enhance female representation (e.g., “having more female legislators improves the articulation of women’s interests”; Mansbridge 1999). But in states where a genderless tongue reigns—and thus where gender distinctions are softer—it might make more sense to champion initiatives that emphasize women’s parity with men as a way to improve female representation“ Context specific legislation recommendations that considers the different ways in which sexism are expressed and experienced in that area, I love it! These fixes are not one size fits all!
+</li>
+<li>
+“Hence, the language-opinion connection we have unearthed is more than a psychological curiosity, for it coincides with decreases in actual gender disparities in many nations. True, exactly how gender-balanced attitudes translate into gender-balanced outcomes is less understood. Yet only additional carefully designed studies can gradually clarify this blind spot, and we hope that other scholars will engage in this endeavor.” Agreed!
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: This paper’s focus on a single country as a sort of case study and, mindful of that, repeats that same study to increase the validity of their findings, then compares across 90 countries using a dataset and finds corroborating findings that gender use in language (grammatical language vs languages with no distinction between even gender pronouns) does influence gender equality sentiment. A good paper! With interesting ideas for future research.
+</p>
+<h1>
+Tavits, M., &amp; Pérez, E. O. (2019). Language influences mass opinion toward gender and LGBT equality.<i> Proceedings of the National Academy of Sciences</i>, 116(34), 16781-16786.
+</h1>
+<p>
+First thoughts: I chose this article as my fifth because I am hopeful that it will speak more directly on the nonbinary experience and how it informs and is informed by research of gender in language and the societal implications and influences. It’s very recent and by the same authors as the previous paper so I am hopeful and interested! Additionally as this is a study in the formal introduction of a gender neutral pronoun in Sweden which has been mentioned before, I am very interested in hearing more about that as well!
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+“For example, in English, they is promoted as a gender-neutral pronoun, yet some claim that people still associate they with males (10, 11) and do the same with generics such as person or human (13).” Interesting! Perhaps this is community/context specific, implying that this association can be changed. (As, ironically, I associate they/them pronouns with the stereotypical nonbinary person which is a thin AFAB white person. This is a shortcoming of my own associations that I am working on challenging and changing!)
+</li>
+<li>
+In the context of this work I can tentatively agree with the fact that the prioritization of the male as the norm hurts both women and queer people, however in general I think that placing cishet women in the same category socially as queer people is inaccurate and ignores the unique harm that the cishet woman specifically can place upon queer people (the fetishization of gay men and the ostracization and endangerment of trans women, specifically)
+</li>
+<li>
+The trans woman’s experience in particular receives these twofold oppressions from both the patriarchal and binary positioning of the male experience as default through language but also the ostracization by cishet women from femme spaces that, usually, are in direct reaction to this former problem, creating even less social mobility and safety for the trans woman.
+</li>
+<li>
+“If gender-neutral pronouns reduce the relevance of traditional gender roles, then speakers who use these pronouns will be less likely to sense these roles are violated, and more likely to be accepting of LGBT individuals.” Yes!!
+</li>
+<li>
+“Compared with subjects who used han (he) to describe the androgynous figure, those who used hen (gender-neutral) are more likely to complete the open-ended sentence (Imagine Nonmales) with a nonmale name” Is this meant to be for the same figure or in a different context that just immediately followed the picture? I missed that part in the original read through of the methods, will have to go back and check
+</li>
+<li>
+“With nonmales in mind to a greater degree, subjects express greater Knowledge of Female Politicians (0.392; P &lt; 0.017) and stronger Profemale Preferences (0.019; P &lt; 0.022). This implies that gender-neutral pronouns prime nonmales in memory, which then leads people to express more positive attitudes toward women in politics.” A key result to remember!
+</li>
+<li>
+“The gender-neutral pronoun hen raises the salience of nonmale categories, which is then associated with people expressing more positive feelings toward gay and transgender individuals (0.268; P &lt; 0.001), as well as more favorable opinions about the social and political inclusion of these groups (0.352; P &lt; 0.001)” Another key finding, although again like we saw in the last paper, these coefficients are very significant but also not very large! It seems to be a small but reliable/significant change. Not necessarily stereotype-breaking on its own, but probably good for priming stereotype criticisms and introducing discussion on these issues in order to more significantly change peoples’ views
+</li>
+<li>
+“This similarity is striking, as feminine pronouns have clear associations with biological female gender, but gender-neutral pronouns do not.” The Venn diagram of people who sexist views and people with homophobic views has a very very large center portion, so this is not too too surprising to me!
+</li>
+<li>
+“The impact of feminine pronouns on Imagine a Nonmale in this larger sample is about double the effect of gender-neutral pronouns.” Interesting! Of course it should be noted that this was for the “Imagine a Nonmale” task which if I recall correctly involved naming a figure with a name? Or perhaps that was the section where they thought of female politicians. Either way, given that, as the study said, very very few Swedish names are gender neutral, and that even fewer politicians are nonbinary I would imagine, it makes sense for the salience to be a bit stronger with female pronouns as there are more exemplars of female names and people to reference.
+</li>
+<li>
+“Despite this, when pooling across studies 1 and 2 (n = 2,155), 51% of the unisex names offered across both studies appear in the gender-neutral condition compared to only 26% in the masculine and 23% in the feminine conditions. This aligns with the expectation that gender-neutral pronouns heighten the salience of nonbinary gender.” Hey there you go, yes exactly!
+</li>
+<li>
+“Compared with masculine pronouns, gender-neutral ones decrease individuals’ mental bias in favor of men, and enhance the salience of women and other heterodox gender groups in speakers’ minds. This effect has significant downstream consequences, as it is associated with individuals expressing political opinions that are more gender equal and tolerant of LGBT individuals. Comparable results also emerge for feminine pronouns.” The bread and butter of these findings, copied here for quick reference and the succinct explanation
+</li>
+<li>
+“Across all 3 studies, culture is held constant by focusing on adults who inhabit the same cultural context. By prying apart language from culture a bit more, these studies help to further establish that language effects on cognition are real and uniquely tied to structural features of a tongue.” Very interesting!
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: This was definitely my favorite of the articles and I am happy I chose it! It’s nice to see a paper look at the influence of nonbinary language and the nonbinary experience, for a next step I would love hear from nonbinary people, their perceptions of gender in language and how they differ, especially within the two contexts of a language and culture like Sweden that has made such amazing strides in gender equality in a way that is gender expansive and of a less progressive culture such as America.
+</p>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

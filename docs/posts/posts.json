@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/Language week two/",
+    "title": "Language Module: Week two",
+    "description": "In which we dig into language studies that look into gender, and where I have a lot to say about the nonbinary experience and where it's missing.",
+    "author": [
+      {
+        "name": "Miranda Trapani",
+        "url": {}
+      }
+    ],
+    "date": "2020-10-15",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-10-16T23:58:04-04:00",
+    "input_file": "learningweektwo.utf8.md"
+  },
+  {
     "path": "posts/Language week one/",
     "title": "Language Module: Week one",
     "description": "Regarding language, reading some textbook sexcerpts on what language is, how we categorize the different parts of speech, and finally a paper on the innateness of syntax!",
