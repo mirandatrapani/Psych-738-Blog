@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/Embodied Cognition week 1/",
+    "title": "Embodied Cognition: Week one",
+    "description": "I read about a topic I only just recently discovered, with surprisingly more focus on the critiques of the theory than the theory itself!",
+    "author": [
+      {
+        "name": "Miranda Trapani",
+        "url": {}
+      }
+    ],
+    "date": "2020-10-27",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-10-27T20:41:01-04:00",
+    "input_file": "embodiedcog1.utf8.md"
+  },
+  {
     "path": "posts/Language week two/",
     "title": "Language Module: Week two",
     "description": "In which we dig into language studies that look into gender, and where I have a lot to say about the nonbinary experience and where it's missing.",
@@ -9,11 +25,11 @@
         "url": {}
       }
     ],
-    "date": "2020-10-15",
+    "date": "2020-10-16",
     "categories": [],
     "preview": {},
-    "last_modified": "2020-10-16T23:58:04-04:00",
-    "input_file": "learningweektwo.utf8.md"
+    "last_modified": "2020-10-27T20:39:35-04:00",
+    "input_file": "languageweektwo.utf8.md"
   },
   {
     "path": "posts/Language week one/",
