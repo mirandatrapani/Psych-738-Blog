@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/Embodied Cognition week 2/",
+    "title": "Embodied Cognition: Week two",
+    "description": "I read several short and sweet experimental studies on embodied cognition that have come out more recently, and learn a lot of information applicable to other aspects of life!",
+    "author": [
+      {
+        "name": "Miranda Trapani",
+        "url": {}
+      }
+    ],
+    "date": "2020-11-06",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-11-06T00:20:04-05:00",
+    "input_file": "embodiedcog2.utf8.md"
+  },
+  {
     "path": "posts/Embodied Cognition week 1/",
     "title": "Embodied Cognition: Week one",
     "description": "I read about a topic I only just recently discovered, with surprisingly more focus on the critiques of the theory than the theory itself!",

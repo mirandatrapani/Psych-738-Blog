@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+  <title>Embodied Cognition: Week two</title>
+  
+  <meta property="description" itemprop="description" content="I read several short and sweet experimental studies on embodied cognition that have come out more recently, and learn a lot of information applicable to other aspects of life!"/>
+  
+  
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2020-11-06"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-11-06"/>
+  <meta name="article:author" content="Miranda Trapani"/>
+  
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="Embodied Cognition: Week two"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="I read several short and sweet experimental studies on embodied cognition that have come out more recently, and learn a lot of information applicable to other aspects of life!"/>
+  <meta property="og:locale" content="en_US"/>
+  
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Embodied Cognition: Week two"/>
+  <meta property="twitter:description" content="I read several short and sweet experimental studies on embodied cognition that have come out more recently, and learn a lot of information applicable to other aspects of life!"/>
+  
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Embodied Cognition: Week two"]},{"type":"character","attributes":{},"value":["I read several short and sweet experimental studies on embodied cognition that have come out more recently, and learn a lot of information applicable to other aspects of life!\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Miranda Trapani"]},{"type":"character","attributes":{},"value":["CUNY Graduate Center"]},{"type":"character","attributes":{},"value":["https://gc.cuny.edu/Home"]}]}]},{"type":"character","attributes":{},"value":["11-6-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["embodiedcog2_files/bowser-1.9.3/bowser.min.js","embodiedcog2_files/distill-2.2.21/template.v2.js","embodiedcog2_files/jquery-1.11.3/jquery.min.js","embodiedcog2_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+  
+  <style type="text/css">
+  
+  body {
+    background-color: white;
+  }
+  
+  .pandoc-table {
+    width: 100%;
+  }
+  
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+  
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+  
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+  
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+  
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+  
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+  
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .shaded .shaded-content {
+    background: white;
+  }
+  
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  d-article {
+    padding-bottom: 30px;
+  }
+  
+  d-appendix {
+    padding-top: 30px;
+  }
+  
+  d-article>p>img {
+    width: 100%;
+  }
+  
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+  
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+  
+  /* CSS for table of contents */
+  
+  .d-toc {
+    color: rgba(0,0,0,0.8);
+    font-size: 0.8em;
+    line-height: 1em;
+  }
+  
+  .d-toc-header {
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1.3em;
+  }
+  
+  .d-toc a {
+    border-bottom: none;
+  }
+  
+  .d-toc ul {
+    padding-left: 0;
+  }
+  
+  .d-toc li>ul {
+    padding-top: 0.8em;
+    padding-left: 16px;
+    margin-bottom: 0.6em;
+  }
+  
+  .d-toc ul,
+  .d-toc li {
+    list-style-type: none;
+  }
+  
+  .d-toc li {
+    margin-bottom: 0.9em;
+  }
+  
+  .d-toc-separator {
+    margin-top: 20px;
+    margin-bottom: 2em;
+  }
+  
+  .d-article-with-toc {
+    border-top: none;
+    padding-top: 0;
+  }
+  
+  
+  
+  /* Tweak code blocks (note that this CSS is repeated above in an injection
+     into the d-code shadow dom) */
+  
+  d-code {
+    overflow-x: auto !important;
+  }
+  
+  pre.d-code code.d-code {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+  
+  pre.text-output {
+  
+    font-size: 12px;
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+  
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  
+  @media(min-width: 768px) {
+  
+  d-code {
+    overflow-x: visible !important;
+  }
+  
+  pre.d-code code.d-code  {
+      padding-left: 18px;
+      font-size: 14px;
+  }
+  pre.text-output {
+    font-size: 14px;
+  }
+  }
+  
+  /* Figure */
+  
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+  
+  .figure img {
+    width: 100%;
+  }
+  
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+  
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+  
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+  
+  
+  
+  /* Tweak 1000px media break to show more text */
+  
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+  
+    .grid {
+      grid-column-gap: 16px;
+    }
+  
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+  
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+  
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+  
+  
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+  
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  
+  /* Social footer */
+  
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+  
+  .disqus-comments {
+    margin-right: 30px;
+  }
+  
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  
+  #disqus_thread {
+    margin-top: 30px;
+  }
+  
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+  
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+  
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+  
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+  
+  
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+  
+  
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+  
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+  
+  
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+  
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+  
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+  
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+  
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+  
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+  
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+  
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+  
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+  
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+  
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  
+  </style>
+  
+  <script type="application/javascript">
+  
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+  
+  // show body when load is complete
+  function on_load_complete() {
+  
+    // set body to visible
+    document.body.style.visibility = 'visible';
+  
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+  
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+  
+  function init_distill() {
+  
+    init_common();
+  
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+  
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+  
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+  
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+  
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+  
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+  
+    // create d-bibliography
+    var bibliography = $('<d-bibliography></d-bibliography>');
+    $('#distill-bibliography').wrap(bibliography);
+  
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+  
+    // replace citations with <d-cite>
+    $('.citation').each(function(i, val) {
+      appendix = true;
+      var cites = $(this).attr('data-cites').split(" ");
+      var dt_cite = $('<d-cite></d-cite>');
+      dt_cite.attr('key', cites.join());
+      $(this).replaceWith(dt_cite);
+    });
+    // remove refs
+    $('#refs').remove();
+  
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+  
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-toc a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+  
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+  
+    // replace code blocks with d-code
+    $('pre>code').each(function(i, val) {
+      var code = $(this);
+      var pre = code.parent();
+      var clz = "";
+      var language = pre.attr('class');
+      if (language) {
+        // map unknown languages to "clike" (without this they just dissapear)
+        if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                                 "javascript", "js", "julia", "lua", "markdown",
+                                 "markup", "mathml", "python", "svg", "xml"]) == -1)
+          language = "clike";
+        language = ' language="' + language + '"';
+        var dt_code = $('<d-code block' + language + clz + '></d-code>');
+        dt_code.text(code.text());
+        pre.replaceWith(dt_code);
+      } else {
+        code.addClass('text-output').unwrap().changeElementType('pre');
+      }
+    });
+  
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+  
+      // capture layout
+      var layout = $(this).attr('data-layout');
+  
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('d-code, pre.text-output, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+  
+  
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+  
+    // load distill framework
+    load_distill_framework();
+  
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+  
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+  
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+  
+      // table of contents
+      if (have_authors) // adjust border if we are in authors
+        $('.d-toc').parent().addClass('d-article-with-toc');
+  
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+  
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+  
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+  
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+  
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+  
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+  
+      // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+      $('d-code').each(function(i, val) {
+        var style = document.createElement('style');
+        style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                          '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+        if (this.shadowRoot)
+          this.shadowRoot.appendChild(style);
+      });
+  
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+  
+      // clear polling timer
+      clearInterval(tid);
+  
+      // show body now that everything is ready
+      on_load_complete();
+    }
+  
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+  
+  }
+  
+  function init_downlevel() {
+  
+    init_common();
+  
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+  
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+  
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+  
+    // remove toc
+    $('.d-toc-header').remove();
+    $('.d-toc').remove();
+    $('.d-toc-separator').remove();
+  
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+  
+  
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+  
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+  
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+  
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+  
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+  
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+  
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+  
+    $('body').addClass('downlevel');
+  
+    on_load_complete();
+  }
+  
+  
+  function init_common() {
+  
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+  
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+  
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+  
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+  
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+  
+      }
+    });
+  
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+  
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      });
+    }
+  
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+  
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+  
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+  
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+  
+  </script>
+  
+  <!--/radix_placeholder_distill-->
+  <script src="embodiedcog2_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="embodiedcog2_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="embodiedcog2_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="embodiedcog2_files/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Embodied Cognition: Week two","description":"I read several short and sweet experimental studies on embodied cognition that have come out more recently, and learn a lot of information applicable to other aspects of life!","authors":[{"author":"Miranda Trapani","authorURL":"#","affiliation":"CUNY Graduate Center","affiliationURL":"https://gc.cuny.edu/Home"}],"publishedDate":"2020-11-06T00:00:00.000-05:00","citationText":"Trapani, 2020"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Embodied Cognition: Week two</h1>
+<p><p>I read several short and sweet experimental studies on embodied cognition that have come out more recently, and learn a lot of information applicable to other aspects of life!</p></p>
+</div>
+
+<div class="d-byline">
+  Miranda Trapani  (CUNY Graduate Center)<a href="https://gc.cuny.edu/Home" class="uri">https://gc.cuny.edu/Home</a>
+  
+<br/>11-6-2020
+</div>
+
+<div class="d-article">
+<h1>
+Beauprez, S. A., &amp; Bidet-Ildei, C. (2019). Perceiving a biological human movement facilitates action verb processing. <i>Current Psychology</i>, 38(5), 1355-1359.
+</h1>
+<p>
+First thoughts: After reading the abstract it sounds like this paper is an experimental study observing that when people watch a person perform an action, that works as a prime in lexical decision tasks (I’m guessing a task where they pick between two words or a set a verb that fits a prompt, and the words can be nonsense words or not verbs?) in that by watching the action, the participants answered more quickly when the necessary verb was related to that action.
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+“One example is the study by Glenberg and Kaschak (2002), who demonstrated an interaction between the movement described in a sentence and the subsequent execution of a movement.” What exactly doesn’t that mean, an interaction? Their evidence for the embodied cognition theory could use a little more explaining! Although I guess a lot of these papers assume the reader is already pretty familiar
+</li>
+<li>
+“Significantly, in a third experiment, which included a neutral condition, the authors showed that the effects observed were related to an interference where action and language were incongruent instead of being related to a facilitation where action and language were congruent.” That an inappropriate prime (this related but opposite such as open or close wrt a gesture like hand opening/closing) can actually interfere with processing in this way sounds like some very strong evidence!
+</li>
+<li>
+I had to look up what a point light display is, it refers to moving images on black backgrounds where white dots of light are arranged to be the joints in a human body and they move as a body would when performing an action. Or doing anything really, but in this study the lights display a body performing an action
+</li>
+<li>
+“The aim of this questionnaire was to verify the homogeneity of the stimuli used and ensure that action verbs related to the prime and action verbs not related to the prime had an equivalent imageability” I wonder of these less imageability verbs though; maybe this is an indicator of where sensorimotor and symbolic systems tend to fit into the cognitive process of concepts?
+</li>
+<li>
+“Since no difference was observed between the two lists of verbs with a scrambled point-light, the facilitation effect was necessarily related to the observation of the biological point-light movement.” SO essentially they did all the congruent and incongruent in a row, so there was worries about the congruent just being easier in general. When the point light movements were just nonsense however this facilitation effect disappeared, indicating it really was the point light movements, and not that the congruent verb list just happened to be easier
+</li>
+<li>
+“Moreover, our data brings the evidence that action observation can affect language processing, which confirms the idea that both action observation and action execution can affect language processing and that action execution and action observation share common processes” Very interesting!
+</li>
+<li>
+Overall this studied showed that:
+<ul>
+<li>
+Pont light human movements can influence the processing of action words
+</li>
+<li>
+This processing is due to the human movement itself, not that it is a dynamic stimulus
+</li>
+<li>
+This supports the idea that sensorimotor representations facilitate lexical access of action words, these two are connected!
+</li>
+</ul>
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: This was an interesting and easy to understand paper, I enjoyed it! It seems like it as a small piece of the puzzle but that it also set a foundation for the applicability of this kind of experiment for other similar questions, particularly the viability of using a point light display for depictions of human activities, which would be a great tool I’m sure for other studies as they are likely easy to manipulate and the comparisons across studies that use them will be stronger as there would be less confounding variables due to quirks of each kind of stimulus presentation otherwise.
+</p>
+<h1>
+Dutriaux, L., Dahiez, X., &amp; Gyselinck, V. (2019). How to change your memory of an object with a posture and a verb. <i>Quarterly Journal of Experimental Psychology,</i> 72(5), 1112-1118.
+</h1>
+<p>
+First thoughts: This one seems in a similar vein as the first one, being about actions and verbs; although I suppose most would be! This one seems to be changing the context of an action to influence the motor simulation and the thus memory of manipulable objects in that scenario.
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+“He proposed that memory encodes the environment in terms of affordances and that the subsequent simulation of these affordances aims to support action” I wonder if other sorts of sensorimotor processes are involved. When I think of the beach, or the sun, I also think of the sensation of the heat of the sun on my skin. A sensation but in a different sense! I wonder about sensorimotor information beyond the 6 senses we think about usually, and beyond the typical motion of grasping or holding.
+</li>
+<li>
+This studies main purpose is to support two claims of the embodied cognition theory:
+<ul>
+<li>
+<ol type="1">
+<li>long term memory is grounded on the sensorimotor system, that memory shares processing resources with the sensorimotor system
+</li>
+<li>
+<ol start="2" type="1">
+<li>Long term memory serves at least in part to support action
+</li>
+</ul>
+</li>
+<li>
+That second makes a lot of sense when you think about how practicing something makes you better! Once you learn to ride a bike you never forget, those past sensorimotor experiences of the ride, what your body is doing, they are always available in long term?
+</li>
+<li>
+“squeezing a ball in one hand made it more difficult for healthy participants to name tools whose handles faced the squeezing hand” That is so interesting!
+</li>
+<li>
+“Dutriaux and Gyselinck (2016) showed that keeping one’s hands behind one’s back interferes with the longterm memory of pictures as well as words denoting manipulable objects, but did not interfere with the memory of non-manipulable objects” Very interesting! This is known as the postural interference (PI) effect which I’m sure will be talked about further so I am writing down the acronym
+</li>
+<li>
+“A number of researchers have proposed that the comprehension of a sentence requires a sensorimotor simulation of its meaning as a whole (e.g., Barsalou, 1999; Glenberg &amp; Robertson, 1999), which could be seen as a sensorimotor situation model (see “Discussion” section)” Sounds like this will be a key concept to this paper. Interested to learn more
+</li>
+<li>
+“Thus, if a constraining posture that prevents action interferes with motor simulation during encoding, we should expect a PI effect related to the verb, that is, a greater interference effect of the constraining posture on the memory of manipulable objects associated with an action verb than with an observation verb.” Basically if it’s harder to remember “pick up cup” than “see cup” when your hands are behind your back than in front of you, this reinforces that the PI effect is really due to the motor representation associated with an action than something else
+</li>
+<li>
+The results show a significant difference across posture for action verbs, as well as across action vs. attentional verb, with posture not having a significant difference in the attention verbs Exactly what we would predict with the embodied cognition framework of how long term memory of actions works!
+</li>
+<li>
+“More importantly, the expected PI effect was observed, that is, the postural interference affected the memory of the objects associated with the action verbs, but not the memory of the objects associated with an attentional verb. This result is first consistent with the idea that memory and motor systems share processing resources.” Glad I interpreted the graph right!
+</li>
+<li>
+“A control condition combining verbs and non-manipulable objects would be needed to make sure that this interference is specific to manipulable objects.” Makes sense, I wonder what kind of objects that would be? I can’t pick up a fridge but say the people who do that for a living moving houses probably would still have a sensorimotor representation of picking up a fridge. Maybe the sun as an object! Or the ocean!
+</li>
+<li>
+“First, the main effect of verb might be explained by a difference in terms of imageability or concreteness between the two kinds of verbs.” Didn’t they test for similarity of imageability in the beginning?
+</li>
+<li>
+“However, all of these different explanations involve the fact that the hands are less available for actions, and are thus consistent with the idea that long-term memory and action share processing resources and that memory encodes information in part for guiding action.” Wrt whether the posture interference is due to the hands not being visible or due to the proprioception of holding the wrist and holding one’s hands behind one’s back.
+</li>
+<li>
+“However, these motor activations could be the mere consequences of an activation cascade, without any role in comprehension” So the alternative is that neurons are firing and it means nothing? I’m not sure I find that a very convincing claim, in general not just in this context
+</li>
+<li>
+“This study is thus the first one, to our knowledge, to show that the modulation of motor simulation has a role in the flexibility of manipulable object concepts, that is, in the construction of situation models” Interesting!
+</li>
+<li>
+“To sum up, this research newly shows that motor interference, that is, hands behind the back posture, decreases the memory of words denoting manipulable objects when associated with an action verb, but not when associated with an attentional verb. It suggests that motor simulation has a role in long-term memory and language processing. Furthermore, the recalls decreased when the context did not highlight action. Thus, this work shows quite clearly (1) that long-term memory and motor systems share processing resources, and (2) that memory is at least in part for guiding action.” The two sentence summary of this article, very interesting.
+</li>
+</ul>
+</p></li>
+</ol></li>
+</ol>
+<p>
+Final thoughts: This paper was another short and easy to follow read, and enjoyable! I always really appreciate these short experimental studies that focus on a single aspect of a theory or one way of proving it and attempt to add to the body of literature on its validity. I appreciate how informative the intros are, and when the methods are very easy to imagine, keeping the study itself easy to follow. All that beside the point that I think this paper really helps support the previous paper on the importance of posture in processing of actions, which is a strong supporting claim for embodied cognition.
+</p>
+<h1>
+Ostarek, M., &amp; Vigliocco, G. (2017). Reading sky and seeing a cloud: On the relevance of events for perceptual simulation. <i>Journal of Experimental Psychology: Learning, Memory, and Cognition,</i> 43(4), 579.
+</h1>
+<p>
+First thoughts: This study is focusing rather than on bodily orientation and action verbs, on where in space objects are typically associated, and looking into the relationship between prime words in different locations on the screen and response time identifying objects where their prototypical event would have them in either the same or a different location as the prime words, I think. So if a prime word is at the top of the screen and you have to identify a bird, you might react quicker than if you had to identify a foot. Hopeful that the methods will make this a little clearer but I think I understand the gist!
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+“Comprehension, in this view, relies at least partly on simulations of sensory experience in one or several modality-specific areas” This is the first time I’ve seen the word comprehension used in the context of this theory and it’s like a little lightbulb went off!
+</li>
+<li>
+“In the current study, we provide evidence pertaining mainly to the question of when perceptual simulation occurs, but also to the question of how the relative role of simulation and distributional patterns unfolds over time during online word comprehension.” Gotcha!
+</li>
+<li>
+“If, at the same time that a visual event is simulated in the upper visual field (e.g., a bird flying in the sky) an unrelated object has to be identified in the same location (e.g., a X), interference should result because the simulation process uses resources that would be required for the visual task (explaining early interference).” This makes sense!
+</li>
+<li>
+A previous study’s weakness was that it was still unclear if semantically matching but perceptually mismatching prime-target pairs yield facilitation. What kind would this be, I wonder? Maybe something like birds and worms, because birds eat worms? Or maybe Different parents of the tree! Like roots and branches.
+</li>
+<li>
+“Our study takes these factors into account by using targets with typical locations across all conditions and by using typically co-occurring but perceptually dissimilar prime-target pairs to probe the activation of location specific event simulations.” Key additions of this study
+</li>
+<li>
+SOA = Stimulus onset asynchrony
+</li>
+<li>
+Experiment 1:
+<ul>
+<li>
+“The second category included 16 words having the same spatial association as one of the targets, but not typically co-occurring with them (e.g., root - shoe)” Oh that makes much more sense and I’m sure was easier to find usable pairs! Although I will say, when I think of tree roots I think of hiking and looking at roots, and usually I can see my shoes too! Maybe I am just primed to associate the two by this article.
+</li>
+<li>
+This procedure is pretty hard to follow, at least I understand the stats they ran! I’m hoping the discussion will be clearer
+</li>
+<li>
+“reflecting faster responses to targets in the cued location when the prime was event-related to the target and slightly slower responses to targets in the cued location when the prime was not event-related to the target” That’s pretty much what was expected I think!
+</li>
+<li>
+So study one found the predicted location-specific priming effect in the event congruent condition but not in the event incongruent condition. They also found no effect of spatial congruence in the event-unrelated condition, nor interference in the cued location, which is different from previous studies. (Seeing the word shoe didn’t interfere with processing root)
+</li>
+<li>
+“Our interpretation of this result is that spatial words activate the visuospatial system, which subsequently is more sensitive to the targets’ locations on the screen and to the compatibility with their typical locations in the real world. Spatially neutral words, on the other hand, do not preactivate it, and typical versus atypical target location thus does not modulate RTs. This is reminiscent of studies that have shown faster RTs to words in the typical location of their referents (branch at the top, snake at the bottom) even without prime words” Key findings of study 1
+</li>
+</ul>
+</li>
+<li>
+Experiment 2:
+<ul>
+<li>
+This study focuses at even earlier stages of processing by decreasing SOA to 100ms. Otherwise, this study was identical.
+</li>
+<li>
+The reduced duration decreased memory scores.
+</li>
+<li>
+Critically, at this shorter SOA, only event congruence led to reduced reaction times, not spatial congruence, indicating a location nonspecific priming effect, indicating at this earlier time in processing, the visuospatial system is not activated
+</li>
+<li>
+Interpreted as “It is possible that at this early point in time, semantic processing is shallow and participants rely on statistical knowledge about co-occurrences of words”
+</li>
+<li>
+“Our results are consistent with the idea that although this mechanism taps into the relations between words, it does not provide in-depth featural information about the given concepts (such as where its referent is typically found). Such information seems to be provided slightly later during word processing via simulation.” Integration of implication of results from experiment 1 and 2
+</li>
+</ul>
+</li>
+<li>
+Experiment 3:
+<ul>
+<li>
+This study used a SOA of 800 ms, under the interpretation that “Consequently, simulation-style effects are likely to be strongest when there is enough time for rich, imagery mediated, conceptual activation” Basically, as people have time process the stimulus, their representation becomes more embodied as they form the simulation
+</li>
+<li>
+Again, identical procedure as study 1, although it looks like they kept the blossom-flower block that they omitted from study 2, due to the “blossom” being sometimes considered an “up” word as it’s the top of the flower, wherein “flower” was meant to be a down word.
+</li>
+<li>
+Experiment 3 also did not find an effect due to spatial congruence, interestingly!
+</li>
+<li>
+In other studies that did find a spatial congruency effect at 800ms, the cue words were abstract, while here they were more concrete. Suggesting that late congruency effects (the processes that take longer to go) are not necessary for word comprehension. I’m a little lost here on the interpretation of results.
+</li>
+</ul>
+</li>
+<li>
+Critically the results here found only a significant influence of location at a SOA of 250ms. Indicating the visuospatial system is only activated in this little time bracket here
+</li>
+<li>
+“The second main finding was a robust advantage for targets appearing in their typical location in Experiment 1, whereas this effect was again absent in Experiments 2 and 3. The finding that this effect was also specific to the SOA of 250 ms is further evidence for the activation of the visuospatial system in a very specific time window in which it responds to objects in locations compatible with past perceptual experience” I”m not sure how this differs from the first discussed finding
+</li>
+<li>
+“The interference effect tends to be small even when meaningless symbols are used as targets, and it is possible that spatial bias (as a result of event activation) and interference are at work simultaneously and can cancel each other out.” I don’t really understand this, is it saying maybe these two effects balance each other out to show no influence from spatial congruence in experiment 2 and 3?
+</li>
+<li>
+“Rather, the idea of framing concepts within backgrounds encourages dynamic processing that constantly implements contextual information” overarching implication/where this studies proposed inferences fit into the theories over all
+</li>
+<li>
+Final addressed alternative: the location specific priming effect at SOA 250ms might have been due to an integration of the two concepts, however if that was the case that same effect should have been pronounced possibly even more so at 800ms.Thus, it’s probably not this cascading effect
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: This papers methods were pretty confusing to interpret, I’m honestly still not 100% sure I understand the task itself. There were distinctions made during the analysis of experiment 2 I believe that I didn’t realize was part of the design and still don’t understand the difference. The implications were also a bit difficult to conceptualize.
+</p>
+<h1>
+Lee, S. H. M., Rotman, J. D., &amp; Perkins, A. W. (2014). Embodied cognition and social consumption: Self-regulating temperature through social products and behaviors. <i>Journal of Consumer Psychology,</i> 24(2), 234-240.
+</h1>
+<p>
+First thoughts: This article seems so sweet! You prefer to eat with people when you are cold is so cute. I’m interested in the interpretation of experiment 2 (drinking a cold drink leads to more socially oriented attributes associated with a product than a warm) as it seems to counter to the findings of the other two. But either way, I think that any significant relationship regardless of the direction is evidence here in support of embodied cognition
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+“For instance, physical warmth positively influences social perceptions, social trust, and social proximity (IJzerman &amp; Semin, 2009; Williams &amp; Bargh, 2008), while feeling lonely (i.e., social exclusion) relates to perceptions of physical coldness or desire for warm remedies” This is why warm weather is superior! I get cold very easily. A lot of interesting implications here!
+</li>
+<li>
+“Furthermore, inducing suspicion results in greater accessibility of fish-related words and detection of fishy smells (Lee &amp; Schwarz, 2012).” But a finding like this surely only is seen or applicable in cultures where fishy is a colloquialism for untrustworthy, yes?
+</li>
+<li>
+“Specifically, individuals can use physical objects to self-regulate psychological deviations from a state of balance.” So interesting to see this kind of research, the implications for clinical psychology and mental health management are interesting!
+</li>
+<li>
+“Thus, the current research expands our understanding of the self-regulatory power of consumer goods (i.e., social products).” Bet all those business-y folk in this class are enjoying this paper!
+</li>
+<li>
+“Recent research argues that people use social products (i.e., interactive products) to fulfill their need for affiliation and belonging” Is this like phones? Social media?
+</li>
+<li>
+Experiment 1: Over all, pooling all participants, their estimate was accurate to true ambient temp, however those alone did estimate significantly lower than those dining together, and those dining alone consistently estimated below true temperature while those dining socially estimated above true temperature
+</li>
+<li>
+Experiment 2: Whether manipulating temperature alters people’s desire for social products. That makes sense now! Drinking a cool drink cools you down, hence the higher number of social attributes on a desirable social product, whatever it may be.
+</li>
+<li>
+“The judges were instructed to rate thoughts/ideas that relate to interactive functions as social (e.g., talking/interacting, walking buddy, sexual acts) and rate thoughts/ideas that relate to non-interactive functions as non-social (e.g., vacuuming, cooking, alarm clock).” This experiment makes perfect sense now! Also, I’m losing it at some of these social function suggestions
+</li>
+<li>
+“That is, people consuming a cool beverage (vs. warm) reported a higher ratio of social functions to non-social functions, ostensibly because they longed for more social yearning through their robot-maid.” This is the best article I’ve ever read.
+</li>
+<li>
+People in a cold room preferred a deal for two people to eat and watch a movie, people in a warm room preferred a deal for one person to eat and watch a movie. Cool!
+</li>
+<li>
+“Together, our findings confirm and are consistent with theories that social experiences are not independent of physiological experiences, and that they are very much relevant to consumption contexts.” I don’t love the marketing take of this article, although I understand it is in the journal of consumer psych, but this paper in general is very cool and interesting
+</li>
+<li>
+“Hence, our results suggest a metaphoric overlap between social/physical warmth (concrete concept) and the abstract concept of social/physical warmth.” I have to wonder if this is culture specific, if other areas might have other metaphoric associations here
+</li>
+<li>
+“Moreover, being warm vs. boiling (cool vs. freezing) could be psychologically different for consumers. For instance, while warmth elicits feelings of comfort, hot may elicit feelings of anger or passion. Therefore, future research should also consider how different degrees of temperature may replicate or yield separate results from the ones we have shown in this research” Yes absolutely! Always good to be wary of extrapolating to extremes
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: I honestly loved this article. It was funny, interesting, engaging, and an easy read. A lot of the information is applicable to my life too, as within these findings are tips for mitigating feelings of isolation or loneliness. While I recognize this was not the intended interpretation or the implications of this paper, to me these results are meaningful nonetheless in mental health management contexts. I hope these results are in the radar of other fields of psychology! I will be passing this information on to others as well!
+</p>
+<h1>
+Kaspar, K., &amp; Klane, A. (2017). Embodied information affects judgements about politicians: The impact of haptic weight sensations and hand cleansing. <i>International Journal of Psychology,</i> 52, 97-105.
+</h1>
+<p>
+First thoughts: Judging from the title and having not yet read the abstract, I am wondering if the focus on politicians and hand washing indicates a study on guilt and/or trustworthiness, based on the introduction of the previous article identifying that hand washing is found influential on feelings of guilt. Haptic in the title apparently refers simply to it being the sense of touch, so I guess the haptic weight sensations are feeling something weighing you down physically in some way, perhaps something heavy in your arm?
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+“Second, after recalling an unethical deed of the past, hand cleansing reduced the desire to voluntarily help others (e.g., Zhong &amp; Liljenquist, 2006), indicating that cleansing attenuated moral stains and restored the moral self-image of participants.” Interesting and less feel-good than the previous article, already this one is making me just a bit frustrated. You should always want to help people!
+</li>
+<li>
+“Also, cleansing evoked harsher moral judgements when participants evaluated social issues while an inflated moral self-image apparently moderated this effect (Zhong et al., 2010).” Interesting, but again, frustrating!
+</li>
+<li>
+“One might speculate that cleansing may lead to a more positive (moral) evaluation of politicians as the bad impression of their misconducts is metaphorically washed away.” An interesting proposed explanation for an opposite observation. If the context of this association is explained culturally, is it embodied?
+</li>
+<li>
+“that is, cleansing one’s own hands should lead to the attribution of moral purity to oneself, licensing harsher moral judgements about others.” An important distinction, makes sense!
+</li>
+<li>
+“We expected that the impact of cleansing is limited to judgements related to the moral domain (Zhong et al., 2010), whereas the impact of weight should be limited to judgements conceptually related to importance (Jostmann et al., 2009), potency (Kaspar, 2013a) and seriousness (Ackerman et al., 2010).” Just a snippet on their experimental focuses
+</li>
+<li>
+“Therefore, regarding judgement dimensions susceptible to both weight sensations and purity experiences, we expected a stronger effect of cleansing when participants haptically feel heaviness” A double influence, very interesting!
+</li>
+<li>
+There are two accounts of the haptic weight sensations, one only influencing perceptions of strangers, and one that it only influences perception of familiar people. Here, they varied the familiarity of the politicians to test for this
+</li>
+<li>
+“The experimenter highlighted that participation was only possible if they were not a member of a political party (to exclude strong judgement biases due to distinct political loyalty).” Interesting! I wonder if this is common in Germany
+</li>
+<li>
+“We slightly adapted the judgement scales. Again, two items were intended to primarily capture effects of hand cleansing (α=.82). We again used three items in order to primarily capture weight effects (α=.80) and three items were used that were assumed to be sensitive to cleansing and weight (α=.52).” I’m assuming this refers to items as in the number of questions on the survey!
+</li>
+<li>
+“(two participants were excluded due to acquiescence tendency as they reported to know the fictive politician).” That’s hilarious
+</li>
+<li>
+They found an effect of hand cleansing, an effect of clipboard weight, and an interaction between the two. There was an effect of politician and a three way interaction, but not an interaction between politicians and hand cleansing or politicians and clipboard weight.
+</li>
+<li>
+What the final results indicate is that the weight did not influence judgement only when the politician is familiar
+</li>
+<li>
+Cleansing hands did result in harsher judgements of politicians as well as less trust in politics
+</li>
+<li>
+“Importantly, cleansing had no effect on judgements exclusively related to physical weight, supporting the notion of a differential effect of bodily sensations on higher cognitions (RQ2).” An important supporting distinction, supporting previous findings of the context specific aspect of this relationship. The reverse was found for the clipboard’s influence on the physical weight items, as was expected
+</li>
+<li>
+“Thus, cleansing licensed harsher moral judgements only when participants haptically felt a “heavy matter.”” Interesting!
+</li>
+<li>
+“Thus, given the same unethical deed, the target’s familiarity had no moderating effect on the impact of the haptic cues (RQ3); that is, the above-mentioned effects of weight and cleansing were not moderated by the target’s familiarity” Essentially addressing that previous discussion by saying there is no influence at all either way! Interesting
+</li>
+<li>
+“However, to our best knowledge, this approach is the state-of-the-art standard in this research field because judgement dimensions systematically pre-tested regarding their conceptual closeness to physical concepts are missing so far” I don’t really understand this sentence. I think it is simply saying that using previous studies to pick the survey questions is the best option out there because nobody has done a methodology paper yet to find the best survey set.
+</li>
+<li>
+“In the case of a solidified opinion and perceived unambiguousness, there might be no need to consider further information such as bodily sensations.” Interesting, is this implying the assumption that people are actively thinking to themselves “My hands are clean, therefore I feel clean and moral and see this politician in a particularly immoral light” ? To me that seems like a strange claim, I don’t think this is a process people are immediately aware of. A paired sample and follow up survey would be interesting here, although difficult as I’m sure they were figure out quite easily a lot about what the study would be looking at, potentially confounding results
+</li>
+<li>
+“Third, samples from different cultures are occasionally not comparable, especially as embodiment phenomena such as weight effects on importance ratings appear to be mediated by culture-dependent semantic activations” Exactly!
+</li>
+<li>
+“We made a first attempt in this direction and found that there might be specific constraints for interactions, such as the change in the temporal perspective taken when judging retrospective versus prospective behaviour.” That makes sense! Hindsight is 20/20, very easy to make strong moral judgement also when you know you can’t be proven wrong at any point in the future based on where or not someone behaves as you predict
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: I really like how this study looked at the dual influence of two different sensations on a given perception! This one was also pretty good. I am surprised by the implication that this process, or these influences of physical sensations and body states and so forth, on perceptions and processing, is something that participants are consciously aware of. I would think just the opposite!
+</p>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
