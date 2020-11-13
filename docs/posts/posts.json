@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/Concepts week 1/",
+    "title": "Concepts: Week one",
+    "description": "Here we learn about a topic closely related to embodied cognition: all of those classic or amodal theories of them concepts! We take a little sampling of many kinds and compare them here.",
+    "author": [
+      {
+        "name": "Miranda Trapani",
+        "url": {}
+      }
+    ],
+    "date": "2020-11-12",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-11-12T19:50:25-05:00",
+    "input_file": "concepts1.utf8.md"
+  },
+  {
     "path": "posts/Embodied Cognition week 2/",
     "title": "Embodied Cognition: Week two",
     "description": "I read several short and sweet experimental studies on embodied cognition that have come out more recently, and learn a lot of information applicable to other aspects of life!",
