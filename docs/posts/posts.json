@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/Concepts week 2/",
+    "title": "Concepts: Week two",
+    "description": "We delve deeper into a few more papers that take some critical and close looks at previous theories of concepts and finally read about a newer theory proposed by our own professor!",
+    "author": [
+      {
+        "name": "Miranda Trapani",
+        "url": {}
+      }
+    ],
+    "date": "2020-11-19",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-11-19T01:18:06-05:00",
+    "input_file": "concepts2.utf8.md"
+  },
+  {
     "path": "posts/Concepts week 1/",
     "title": "Concepts: Week one",
     "description": "Here we learn about a topic closely related to embodied cognition: all of those classic or amodal theories of them concepts! We take a little sampling of many kinds and compare them here.",
