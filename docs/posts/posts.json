@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/Decisions Week 1/",
+    "title": "Decision Making: Week one",
+    "description": "This module focuses on the foundational Signal Detection Theory. The basics of it, using it, and most excitedly, all of the other things it is useful for besides discriminating across sensory stimuli!",
+    "author": [
+      {
+        "name": "Miranda Trapani",
+        "url": {}
+      }
+    ],
+    "date": "2020-11-24",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-11-24T13:43:42-05:00",
+    "input_file": "decisions1.utf8.md"
+  },
+  {
     "path": "posts/Concepts week 2/",
     "title": "Concepts: Week two",
     "description": "We delve deeper into a few more papers that take some critical and close looks at previous theories of concepts and finally read about a newer theory proposed by our own professor!",

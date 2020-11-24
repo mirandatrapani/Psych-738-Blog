@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+<title>Miranda Trapani: Decision Making: Week one</title>
+
+<meta property="description" itemprop="description" content="This module focuses on the foundational Signal Detection Theory. The basics of it, using it, and most excitedly, all of the other things it is useful for besides discriminating across sensory stimuli!"/>
+
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2020-11-24"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-11-24"/>
+<meta name="article:author" content="Miranda Trapani"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="Miranda Trapani: Decision Making: Week one"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="This module focuses on the foundational Signal Detection Theory. The basics of it, using it, and most excitedly, all of the other things it is useful for besides discriminating across sensory stimuli!"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Miranda Trapani"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:title" content="Miranda Trapani: Decision Making: Week one"/>
+<meta property="twitter:description" content="This module focuses on the foundational Signal Detection Theory. The basics of it, using it, and most excitedly, all of the other things it is useful for besides discriminating across sensory stimuli!"/>
+
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Decision Making: Week one"]},{"type":"character","attributes":{},"value":["This module focuses on the foundational Signal Detection Theory. The basics of it, using it, and most excitedly, all of the other things it is useful for besides discriminating across sensory stimuli!"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Miranda Trapani"]},{"type":"character","attributes":{},"value":["CUNY Graduate Center"]},{"type":"character","attributes":{},"value":["https://gc.cuny.edu/Home"]}]}]},{"type":"character","attributes":{},"value":["11-24-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["decisions1_files/bowser-1.9.3/bowser.min.js","decisions1_files/distill-2.2.21/template.v2.js","decisions1_files/jquery-1.11.3/jquery.min.js","decisions1_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #455a64;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative;}
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+</style>
+
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for table of contents */
+
+.d-toc {
+  color: rgba(0,0,0,0.8);
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.d-toc-header {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+.d-toc a {
+  border-bottom: none;
+}
+
+.d-toc ul {
+  padding-left: 0;
+}
+
+.d-toc li>ul {
+  padding-top: 0.8em;
+  padding-left: 16px;
+  margin-bottom: 0.6em;
+}
+
+.d-toc ul,
+.d-toc li {
+  list-style-type: none;
+}
+
+.d-toc li {
+  margin-bottom: 0.9em;
+}
+
+.d-toc-separator {
+  margin-top: 20px;
+  margin-bottom: 2em;
+}
+
+.d-article-with-toc {
+  border-top: none;
+  padding-top: 0;
+}
+
+
+
+/* Tweak code blocks (note that this CSS is repeated above in an injection
+   into the d-code shadow dom) */
+
+d-code {
+  overflow-x: auto !important;
+}
+
+pre.d-code code.d-code {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+pre.text-output {
+
+  font-size: 12px;
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media(min-width: 768px) {
+
+d-code {
+  overflow-x: visible !important;
+}
+
+pre.d-code code.d-code  {
+    padding-left: 18px;
+    font-size: 14px;
+}
+pre.text-output {
+  font-size: 14px;
+}
+}
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+.sidebar-section.custom {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.custom p {
+  margin-bottom: 0.5em;
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // create d-bibliography
+  var bibliography = $('<d-bibliography></d-bibliography>');
+  $('#distill-bibliography').wrap(bibliography);
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace citations with <d-cite>
+  $('.citation').each(function(i, val) {
+    appendix = true;
+    var cites = $(this).attr('data-cites').split(" ");
+    var dt_cite = $('<d-cite></d-cite>');
+    dt_cite.attr('key', cites.join());
+    $(this).replaceWith(dt_cite);
+  });
+  // remove refs
+  $('#refs').remove();
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-toc a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // replace code blocks with d-code
+  $('pre>code').each(function(i, val) {
+    var code = $(this);
+    var pre = code.parent();
+    var clz = "";
+    var language = pre.attr('class');
+    if (language) {
+      // map unknown languages to "clike" (without this they just dissapear)
+      if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                               "javascript", "js", "julia", "lua", "markdown",
+                               "markup", "mathml", "python", "svg", "xml"]) == -1)
+        language = "clike";
+      language = ' language="' + language + '"';
+      var dt_code = $('<d-code block' + language + clz + '></d-code>');
+      dt_code.text(code.text());
+      pre.replaceWith(dt_code);
+    } else {
+      code.addClass('text-output').unwrap().changeElementType('pre');
+    }
+  });
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('d-code, pre.text-output, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // table of contents
+    if (have_authors) // adjust border if we are in authors
+      $('.d-toc').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+    $('d-code').each(function(i, val) {
+      var style = document.createElement('style');
+      style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                        '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+      if (this.shadowRoot)
+        this.shadowRoot.appendChild(style);
+    });
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-toc-header').remove();
+  $('.d-toc').remove();
+  $('.d-toc-separator').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Decision Making: Week one","description":"This module focuses on the foundational Signal Detection Theory. The basics of it, using it, and most excitedly, all of the other things it is useful for besides discriminating across sensory stimuli!","authors":[{"author":"Miranda Trapani","authorURL":"#","affiliation":"CUNY Graduate Center","affiliationURL":"https://gc.cuny.edu/Home"}],"publishedDate":"2020-11-24T00:00:00.000-05:00","citationText":"Trapani, 2020"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">Miranda Trapani</a>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Home</a>
+<a href="../../about.html">About</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Decision Making: Week one</h1>
+<p><p>This module focuses on the foundational Signal Detection Theory. The basics of it, using it, and most excitedly, all of the other things it is useful for besides discriminating across sensory stimuli!</p></p>
+</div>
+
+<div class="d-byline">
+  Miranda Trapani  (CUNY Graduate Center)<a href="https://gc.cuny.edu/Home" class="uri">https://gc.cuny.edu/Home</a>
+  
+<br/>11-24-2020
+</div>
+
+<div class="d-article">
+<h1>
+Stanislaw, H., &amp; Todorov, N. (1999). Calculation of signal detection theory measures. <i>Behavior research methods, instruments, &amp; computers,</i> 31(1), 137-149.
+</h1>
+<p>
+First thoughts: Decision making and signal detection theory at first confuse me a bit as being considered related, as my first impression of decision making would be more along the lines of intentional or conscious decision making, the systems we use to decide things and so on. However signal detection theory, which I am somewhat familiar with from my basic processes class during my Masters, instead refers to our thresholds for stimuli detection and discrimination. I suppose perhaps this will involve borrowing the framework of stimuli detection thresholds and instead applying a decision making threshold theory?
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+This is illustrated in Figure I, where the decision variable (measured in arbitrary units) has a mean of 0 and a standard deviation of 1 on noise trials.” A z score!
+</li>
+<li>
+The key use of SDT: “The major contribution of SDT to psychology is the separation of response bias and sensitivity.” This separation of the factor of response bias (tendency to say yes or no) and sensitivity, the perceptual origins of SDT
+</li>
+<li>
+“Thus, sensitivity can be quantified by using the hit and false-alarm rates to determine the distance between the means, relative to their standard deviations.” This is done by dividing the distance between the means by the standard deviations. So d’ is the standard deviation of the mean for a given response rate, or I guess like a z score, because as we have seen above the decision variable is standardized. Unless I am mistaken and there is some sort of pooled or averaged standard deviation calculation going on to get the accurate denominator
+</li>
+<li>
+The measure d’ is unaffected by response bias and exclusively measures sensitivity if two assumptions are met:
+<ul>
+<li>
+First: The signal and noise distributions are both normal
+</li>
+<li>
+Second: The signal and noise distributions have the same standard deviation. That answers my question above!
+</li>
+</ul>
+</li>
+<li>
+So I would assume in order to use responses to a given task and compute these scores you would first have to ensure their normality and then transform them to fit on a normal distribution with a mean of 0 and a standard deviation of 1? Wait no, only a standard deviation of 1. Wait, if the standard deviation is always 1, as indicated above, then isn’t the d’ value purely the difference in means?
+</li>
+<li>
+“A’ typically ranges from .5, which indicates that signals cannot be distinguished from noise, to 1, which corresponds to perfect performance. Values less than .5 may arise from sampling error or response confusion; the minimum possible value is O” I guess this is a simple percentage correct responses?
+</li>
+<li>
+The ROC area (Receiver operating characteristic) is another way of measuring responses, unlike measurements used anova like d’, this one doesn’t rely on the assumption that the signal and noise distributions have the same standard deviation in response rate. This kind of measurement works for yes/no and for rating tasks
+</li>
+<li>
+“Thus, d is found by subtracting the z score that corresponds to the false-alarm rate from the z score that corresponds to the hit rate.” Ah, I understand better now why it isn’t simply the difference in means! Although again, once you have transformed this data fit on a z score graph, it is indeed just the difference in means. Got it!
+</li>
+<li>
+This paper is really good at math! The statistics and the explanation of the equations and better ways to write them is really impressive, I’m sure this is a big part of why this paper is so important. It is not lost on me that this level of comfort with statistics is particularly an asset in this field, as psychology people tend to be a little mathphobic!
+</li>
+<li>
+“Adding terms to the series increases accuracy, but, in practice, a limit is imposed by round-off errors.” I wonder if computer software advances in the past 20 years have made the use of power series for conversions between z scores and probabilities more viable as you can hopefully avoid rounding altogether.
+</li>
+<li>
+“Regardless of the approach used for the (phi) and (phi)-1 functions, problems may arise when the hit or false-alarm rate equals 0, because the corresponding score is (negative infinity) Similarly, a hit or false-alarm rate of 1 corresponds to a z score of (positive infinity)” That makes sense, it is hard to find an algorithm (method?) that can be extrapolated to extremes
+</li>
+<li>
+“SPSS lacks the sign function, so the statement ABS(H - F)/(H - F) is used instead.” I find this a really clever trick for a really funny problem
+</li>
+<li>
+“The five pairs of hit and false-alarm rates that result from this procedure are listed in Table 5.” So should these be done for every difference between signal and noise? Or I supposed these are only yes/no tasks. Are true signals present at every task? Or does it not matter?
+</li>
+<li>
+“Thus, researchers who are primarily interested in sensitivity may wish to avoid yes/no tasks altogether and rely, instead, on forced-choice or rating tasks.” I think I followed the reasoning behind this in the previous two paragraphs, none the less I will definitely highlight it here as a key takeaway, although it’s not the point of the paper
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: I honestly expected this paper to be a very difficult read as my prior experience with SDT has admittedly not been the most interesting of concepts or studies. However, this wasn’t bad! The section on its possible applications and their variety was valuable, and this paper is a great one to have in my repertoire for how detailed it goes into the many varying ways of computing signal detections, the different measurements I mean, when to use what, as well as information on how to run them in various programs (although I imagine that section is now quite outdated) and explanation of equations and why to use certain ones!
+</p>
+<h1>
+Litvinova, A., Herzog, S. M., Kall, A. A., Pleskac, T. J., &amp; Hertwig, R. (2020). How the “wisdom of the inner crowd” can boost accuracy of confidence judgments. <i>Decision.</i> 7(3), p 183-211.
+</h1>
+<p>
+First thoughts: In reading the abstract this is essentially a paper about how to improve one’s own accuracy individually by asking your “inner crowd” which is essentially yourself twice? Of course not literally about how to do that, but about how this is a phenomenon that seems to work under a certain circumstance, when you are already guessing above chance without doing it, it seems. Already that makes sense, perhaps this is a sort of polarizing mechanism. If you are scoring below chance then you start to score consistently wrong, indicating an opposite response criteria to that desired. Would make sense!
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+So here is what I should be getting some solid impressions on from this paper: “ confidence (metacognitive decisions; resolution vs. calibration), wisdom-of-the-crowds effect, averaging vs. maximizing, consensuality, dialectical bootstrapping, “kind” vs. “wicked” environments/stimuli/contexts”
+</li>
+<li>
+“Representative samples of general knowledge items lead to better calibrated confidence in comparison to selectively sampled items, yet they do not fully eliminate miscalibration” So basically, when people make confidence judgements their flaw is more in the information samples that they use to make these assessments and less on whether they have assessed their own knowledge well.
+</li>
+<li>
+I am obsessed with this entire introduction basically saying “when people are encouraged to or taught how to think critically, they make more accurate judgement calls”
+</li>
+<li>
+Kind items: items for which the majority agree on the right answer
+</li>
+<li>
+Wicked items: itms for which the majority agreed on the wrong answer
+</li>
+<li>
+For these two above, particularly wicked items, bring up why you might want to average confidence judgements rather than maximize them if you’re trying to optimize accuracy
+</li>
+<li>
+An important note on averaging confidence judgements: “When the knowledge sources underlying the aggregated judgments are distinct, averaging improves the ability of confidence judgments to discriminate between correct and wrong decisions (i.e., resolution) but compromises the correspondence between subjective and objective probabilities (i.e., calibration), whereas under shared knowledge sources, averaging solely improves calibration by canceling out random error (Ariely et al., 2000; Wallsten &amp; Diederich, 2001)”
+</li>
+<li>
+“systematic study of the boundary conditions for the success of averaging and maximizing and delineate under which conditions one strategy would have an edge over the other.” In a round about way, this is kind of a paper on knowing what you know!
+</li>
+<li>
+For correct judgements, if the two assessments (both low and high confidence) are both correct, it’s hard to tell whether maximizing or averaging provide a better score. However when the low confidence assessment is wrong and the high confidence is correct, maximizing is always better than that of averaging. For incorrect judgements (with wicked items), averaging is always better for getting the correct judgement.
+</li>
+<li>
+“In sum, as the probability P of the high-confidence-choice being correct increases, increasing the weight on the high confidence choice is beneficial. In contrast, as P decreases, decreasing the weight on the high-confidence choice is beneficial” where P is the Brier score (essentially an average of the confidence scores with 0 being the best possible and 1 being the worst possible score. See graphs and explanation on page 5 and 6)
+</li>
+<li>
+Some important considerations for this algorithmic finding: “However, not all combinations of (a) the probability P that the high-confidence choice is correct; (b) the confidence CH in this high-confidence choice; (c) the confidence CL in the other, low-confidence choice; and (d) whether the high- and low confidence choices are the same or not, are equally likely in practice)
+</li>
+<li>
+“diversity in judgments is a key requisite for the wisdom-of-crowds effect” Intuitively makes sense, redundant assessments (both assessments are very similar) the wisdom-of-crowds effect is less pronounced
+</li>
+<li>
+“Maximizing improved the Brier score in kind environments (i.e., p(C) .5), for example, by .065 points for r 0 and p(C) .9, but impaired the Brier score in wicked environments (i.e., p(C) .5), for example, by .09 points for r 0 and p(C) .2. Furthermore, maximizing outperformed averaging only once p(C) .6 but not yet for p(C) .5. As redundancy (r) increased, the sizes of these beneficial and harmful effects both decreased.” Given the definition of wicked items, this makes a lot of sense this polarizing effect we see with maximizing. Of course if you’re more confident in the wrong answer, you will be more wrong if you maximize your judgements! Also, of course redundancy would minimize these effects, the potential difference between the judgement outcomes also shrinks.
+</li>
+<li>
+“calibration (i.e., the extent to which subjective and objective probabilities match) and resolution (i.e., the extent to which confidence discriminates between correct and wrong decisions, irrespective of calibration).” Just some definitions
+</li>
+<li>
+“Averaging had an effect on resolution similar to that of maximizing, but it performed better on two other measures of the decomposition (bias and scatter) and therefore outperformed maximizing for wicked items.” Makes sense!
+</li>
+<li>
+The four major insights of the simulation study described in part above:
+<ul>
+<li>
+Averaging judgments resulted in improved overall accuracy irrespective of the wickedness of the items
+</li>
+<li>
+For wicked items, maximizing resulted in poorer accuracy than sticking to the first judgement but in better accuracy for kind items
+</li>
+<li>
+Maximizing outperformed averaging only once items were answered correctly 50-60% of the time or more, modulated by redundancy scores. This means a kid item is necessary but not sufficient for maximizing to outperform averaging, a novel finding to this study
+</li>
+<li>
+Confidence correlated with how strongly the majority agreed on an answer, not wit the correctness of the decision per se (hence the wicked item observations)
+</li>
+</ul>
+</li>
+<li>
+This was using a model however so there are chances of this model/simulation not being an accurate depiction of human behavior, thus prescriptive recommendations based on these may not be meaningful in a more ecologically relevant context (actual confidence judgements made by humans within a given context)
+</li>
+<li>
+This second study purposefully asked participants (actual people this time) to use a dialectical bootstrapping approach (the consider-the-opposite technique) for the second judgement, this also reduced redundancy in confidence judgements, and this was to see if this would improve accuracy when using the averaging technique
+</li>
+<li>
+Their final analysis was looking at 3 different studies, in the third of these they saw that the dialecti- I’m so confused by my note. Is study two or three here the one using the dialectical bootstrapping approach? Here on page 18 it says study 3 however I have in my notes here study 2. This paper is huge. This final comparison of 3 studies could have been its own separate paper
+</li>
+<li>
+Ok I went back and understand now. There is study 1 (described above) and study two, which is made up of 3 smaller studies: two reanalysing data from other papers, and a third one which is a new work on human participants and uses the dialectical bootstrapping approach!
+</li>
+<li>
+The first two studies analyzed here in study two were for the purpose of determining whether the results of the simulation in study one did in fact generalize to human samples. They found consistent results in that averaging confidence judgements from the same person improved overall accuracy where as maximizing harmed overall accuracy even in environments with relatively few wicked items
+</li>
+<li>
+“Our theoretical and empirical results suggest that averaging should be the preferred strategy to harness the wisdom of one’s inner crowd. The reason is that the robust averaging strategy, relative to the more fickle maximizing strategy, can boost accuracy of confidence judgments while requiring less knowledge about the kindness and wickedness of the items the decision maker faces.” The overall statement from this paper!
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: This paper was quite the marathon! Luckily it was a pretty easy read for the most part, until I got to the part where they were describing the three different studies they looked at in study two. Overall, this paper was pretty interesting in it’s careful and methodological assessment of what some could essentially call a heuristic, these confidence judgments! I love the applicability of this to daily life, maybe I’ll do better when playing “Who Wants To Be A Millionaire” now.
+</p>
+<h1>
+Roets, A., Schwartz, B., &amp; Guan, Y. (2012). The tyranny of choice: A cross-cultural investigation of maximizing-satisficing effects on well-being. <i>Judgment and Decision Making,</i> 7(6), 689.
+</h1>
+<p>
+First thoughts:
+</p>
+<p>
+Thoughts while reading:
+<ul>
+<li>
+Here are the things that I need to keep in mind while reading: “satisficing vs. maximizing, regret/buyer’s remorse, individual and societal differences in these decision approaches”
+</li>
+<li>
+“People on either side of this dispositional continuum have been labeled satisficers and maximizers, respectively, and the latter group is expected to be more vulnerable to the problems that arise from an excess of choice.” So Satisficers adopt a “good enough” approach and aren’t bothered/influenced by number of options because as long as one passes their threshold of being a good option they are happy with it. While with maximizers they are more vulnerable to regret/buyer’s remorse because they strongly need to feel that they have the best option, so as options out there increase and it becomes infeasible to know all information about each one to make the best, most informed decision, they become upset, dissatisfied with their lives, less optimistic, etc
+</li>
+<li>
+My first question is again one of individual differences; do people take on different strategies for different decisions? What kinds lead to which strategy? What other traits correlate to one’s propensity to use a given strategy?
+</li>
+<li>
+So essentially they are going to compare maximizers reactions to choices in Western societies such as the US to those in China where personal choice/individualism is a less salient determiner of happiness.
+</li>
+<li>
+“the adaptive form of perfectionism is often associated with a variety of positive outcomes and higher well-being, whereas the maladaptive form is associated with negative outcomes and lower well-being.” No wonder, maladaptive perfectionism just sounds like a symptom or expression of some anxiety or mood disorder!
+</li>
+<li>
+“this link is considerably weaker or even absent in nonwestern societies (i.e., China).” I’m not sure that China has this wildly different opinion of maximizing options as one might think. At the very least, I would argue that there is as much individual variability in the population as there is in western societies, however when I think about the kinds of choices that people might have multiple options for such as schools, cars, apartments, clothing, and food, all of these decisions offer numerous upon numerous options in China as well. If you are seeking a society where everyone has minimal options for food, clothing, shelter, vehicles, and many other day to day decisions, China is not it! They even have three major cell phone companies to choose from. I have less wifi options here at home in the US than I did in China!
+</li>
+<li>
+So their scale for how much of a maximizer a person is is this Maximizing Scale which is an aggregate of three facets, the one of interest here is the High Standards facet because HIgh Standards per se the research is split on whether high standards actually is associated with worse well being the way it has been seen with maximizing strategy in general (see the perfectionism comparison above for an explanation on why this might be)
+</li>
+<li>
+God the wage demographics of the three different sample sets is incredibly interesting. A mere 2.8% of Chinese participants stated they had a “more than average” income. Is this cultural (not willing to admit/it being rude to claim you make a lot of money) or a sign of the widening class gap in China I wonder?
+</li>
+<li>
+Relationship of maximizing and society with well being:
+<ul>
+<li>
+What is the purpose/role of the dummy-coded society variables? What does this mean?
+</li>
+<li>
+The relationship between maximizing and well-being is significantly different in China compared to Europe and the U.S., and there is no significant difference between the U.S. and Europe.
+</li>
+<li>
+There was a negative relationship for the U.S. and Europe and no such relationship for China (no relationship at all!)
+</li>
+</ul>
+</li>
+<li>
+Relationships of maximizing and society with regret:
+<ul>
+<li>
+Maximizing was associated with higher levels of regret in all three societies
+</li>
+<li>
+There was a significant main effect of maximizing and there was one of society. I don’t know why but this wording has been confused on the implication/what this result means! I guess just that these two influence each other? Or these two were influential in the regression for all three measures.
+</li>
+<li>
+Between China and Europe there was a nearly significant interaction between maximizing and society, and for China and the U.S. it was small and significant
+</li>
+</ul>
+</li>
+<li>
+Relationships of regret and society with well being:
+<ul>
+<li>
+Does this mean controlling for well being? Semi-partial correlations perhaps? I wish I understood this terminology just a bit better, I would like a visual aid of the variance spread or something like that
+</li>
+<li>
+For this one, there was a significant main effect of regret, but no significant main effect for society when comparing across the countries, although there was a significant interaction between regret and society for China versus both Europe and the U.S. However, it sounds like this interaction is just from the regret influence and not the society? Not sure what the implications are of this, hopefully the discussion clarifies
+</li>
+<li>
+“As can be seen in Figure 3, regret had a negative relationship with wellbeing after controlling for demographic variables in both the U.S. and Europe (Beta = −.43, and Beta = −.51, both p &lt;.001), whereas the relation in China was much weaker (Beta = −.18, p &lt; .05).” Tired of typing these out, this will be easier to reference later
+</li>
+</ul>
+</li>
+<li>
+Mediation analyses:
+<ul>
+<li>
+Basically what these results indicate is that the difference between China and the Western societies compared is that the influence of maximizing is not that China has a different relationship with maximizing and regret but a different relationship between well-being and regret. Maximizers do regret more regardless of society, but only in Western societies does this regret lead to less well-being.
+</li>
+<li>
+A final analysis was done that showed this as well (“between Europe and China, the significant interaction effect of maximizing and society in step 2 dropped substantially and was rendered only marginally significant in Step 3” Step 3 is when the interaction between regret and society was also considered) (For the U.S. the significant interaction between maximizing and society completely disappeared when controlling for the influence of regret in step 3)
+</li>
+<li>
+“The interaction between culture and regret in step 3 approached significant for Europe versus China and [was] significant for the U.S. versus China” Another reiteration of that above
+</li>
+<li>
+They also bootstrapped the mediation analyses and found that “the total effect of maximizing on well-being in Europe stems from the combination of a direct and an indirect effect through regret, whereas in the U.S., the total effect of maximizing on well-being is entirely attributed to their indirect link” Which is a potentially interesting nuance of these societies that I wonder what they will say about
+</li>
+</ul>
+</li>
+<li>
+Relationships at the facet level:
+<ul>
+<li>
+Here they compared using the Maximizing scale across the three facets that make it up due to previous research identifying that the High Standard portion may not be a good measure in that it doesn’t hold the same relationship with well being as the other facets of the Maximizing scale
+</li>
+<li>
+They used Europe as the reference society as they were also interested in comparisons between the two western societies
+</li>
+<li>
+They found a significant effect on well-being from the interaction of society and facet scale for all three facets between Europe and China. Between Europe and the U.S. there was only a significant interaction on well being for the interaction of the High Standard facet with society, not the other two facets.
+</li>
+<li>
+There was a significant negative slope between well-being and HIgh Standards facet in Europe but not in the U.S.
+</li>
+<li>
+All three facets had a relationship with regret in all three societies, with interactions with society for each scale
+</li>
+<li>
+Through bootstrapping they also found significant indirect effects in Europe for all three facet scales, as well as a direct effect for Alternative Search and Decision Difficulty (the other two facets of the Maximizing scale), and in the U.S. these were similar
+</li>
+<li>
+“no total effect of High Standards was found in the U.S., because the detrimental indirect effect of High Standards on well-being was countered by its direct effect, which showed an opposite sign” This means according to them that “High Standards are associated with increased regret, and therefore with lower well-being, but they also have a positive association with well-being that is independent from their association with regret.” Which is that same issue discussed and posited above!
+</li>
+<li>
+In looking into this, there was a bit of a different relationship between the High Standards facet and the two kinds of perfectionism (negative and positive) in that for the negative kind of perfectionism the U.S. relationship with High Standards was a bit smaller correlation than in Europe, although this difference wasn’t significantly different
+</li>
+<li>
+I think personally the most important distinction is this finding: “Positive perfectionism also showed a small negative relationship with well-being in the European sample but, most interestingly, a positive association was found in the U.S. sample”
+</li>
+</ul>
+</li>
+<li>
+The associations between the High Standards facet and perfectionism indicate “the Maximizing High Standards facet itself has both an adaptive and a maladaptive aspect or meaning.” as well
+</li>
+<li>
+“In particular, it seems that, in the U.S. sample, the modest positive influence of the dominant positive aspect of high standards (i.e., positive perfectionism) counters the strong negative influence of the less dominant negative aspect of high standards” A reiteration/explanation of the reason for the difference in relationships between High Standards and perfectionism in the U.S.
+</li>
+</ul>
+</p>
+<p>
+Final thoughts: This paper was pretty interesting! I liked the comparisons between China and Europe and the U.S., although I still feel that the authors claim that China has less options for certain decisions was not necessarily a well researched one. I think that one thing they should have delved into more is what kinds of decisions exactly these results are relevant for, and why. I am also curious how these differing maximizing and satisficing strategies influence other behaviors. Are maximizers less likely to try new things because they worry it will be a bad choice compared to what they already do/enjoy/have/eat/etc? That might be interesting to look at!
+</p>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
